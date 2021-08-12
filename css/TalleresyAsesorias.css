@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.posicionMenu {
+    color: black;
+}
+
+.colorNavegador {
+    background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
+    height: 100px;
+}
+
+a img {
+    width: 5vw;
+    height: 10vh;
+    margin-top: 7px;
+}
+
+.margenesLogo {
+    top: 1vh;
+    left: 2vw;
+}
+
+body {
+    background-color: #FFF1E6;
+}
+
+main {
+    height: 500vh;
+    display: grid;
+    grid-template-areas: 
+    "h1 ."
+    ". subtitulo1"
+    "imagenPan1 texto1"
+    ". subtitulo2"
+    "imagenPan2 texto2"
+    "subtitulo3 ."
+    "texto3 imagenPan3";
+    grid-template-columns: auto;
+    grid-template-rows: auto 5vh auto 5vh auto 5vh auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-content: space-around ;
+    justify-items: center;
+    animation-duration: 300s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    grid-area: h1;
+    font-size: 15vh;
+    font-family: sans-serif;
+    color: rgb(206, 159, 57);
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.imagenPan1 {
+    grid-area: imagenPan1;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+}
+
+.imagenPan2 {
+    grid-area: imagenPan2;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+}
+
+.imagenPan3 {
+    grid-area: imagenPan3;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+}
+
+.subtitulo1 {
+    grid-area: subtitulo1;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+    margin-right: 15vw;
+}
+
+.subtitulo2 {
+    grid-area: subtitulo2;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+    margin-right: 5vw;
+}
+
+.subtitulo3 {
+    grid-area: subtitulo3;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.texto1 {
+    grid-area: texto1;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+}
+
+.texto2 {
+    grid-area: texto2;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+}
+
+.texto3 {
+    grid-area: texto3;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+}
+
+/*  transformaciones y transiciones de la página  */
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.subtitulo1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.subtitulo2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.subtitulo3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.texto1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.texto2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.texto3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(214, 186, 124);
+    height: 15vh;
+    top: 100vh;
+    padding: 2px, 1px, 2px, 1px;
+    background-image: linear-gradient(#FFF1E6, white);
+    padding: 2px,1px,2px,1px;
+}
+

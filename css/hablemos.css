@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.posicionMenu {
+    color: black;
+}
+
+.colorNavegador {
+    background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
+    height: 100px;
+}
+ul a img {
+    width: 5vw;
+    height: 10vh;
+    margin-top: 7px;
+}
+
+.margenesLogo {
+    top: 1vh;
+    left: 2vw;
+}
+
+body {
+    background-color: #FFF1E6;
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "h1 h1"
+    "form mapa";
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 20vh auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    animation-duration: 300s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    grid-area: h1;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    justify-self: center;
+    margin-right: 20vw;
+}
+
+form {
+    grid-area: form;
+    margin-left: 10vw;
+    width: 20rem;
+    margin-left: 10vw;
+}
+
+#mapa {
+    grid-area: mapa;
+}
+
+.mapa__imagen {
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+}
+
+/*  transformaciones y transiciones de la página  */
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+form:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.mapa:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(214, 186, 124);
+    height: 15vh;
+    top: 100vh;
+    padding: 2px, 1px, 2px, 1px;
+    background-image: linear-gradient(#FFF1E6, white);
+    padding: 2px,1px,2px,1px;
+}

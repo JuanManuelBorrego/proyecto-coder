@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.posicionMenu {
+    color: black;
+}
+
+.colorNavegador {
+    background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
+    height: 100px;
+}
+
+a img {
+    width: 5vw;
+    height: 10vh;
+    margin-top: 7px;
+}
+
+.margenesLogo {
+    top: 1vh;
+    left: 2vw;
+}
+
+body {
+    background-color: #FFF1E6;
+}
+
+main {
+    height: 150vh;
+    display: grid;
+    grid-template-areas: 
+    "h1 ."
+    "h2 h2"
+    "p main__imagen"
+    "main__boton .";
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: 20vh auto auto auto 5vh;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-content: space-around;
+    animation-duration: 300s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    grid-area: h1;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+h2 {
+    grid-area: h2;
+    font-family: sans-serif;
+    font-size: 5vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.main__imagen {
+    grid-area: main__imagen;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+}
+
+p {
+    grid-area: p;
+    justify-self: center;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+}
+
+.main__boton {
+    grid-area: main__boton;
+    color: black;
+    height: 3vh;
+    width: 8vw;
+    margin-left: 20vw;
+}
+
+/*  transformaciones y transiciones de la página  */
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+h2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+p:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.main__imagen:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(214, 186, 124);
+    height: 15vh;
+    top: 100vh;
+    padding: 2px, 1px, 2px, 1px;
+    background-image: linear-gradient(#FFF1E6, white);
+    padding: 2px,1px,2px,1px;
+}
+

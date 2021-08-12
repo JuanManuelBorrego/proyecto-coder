@@ -1,0 +1,304 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.posicionMenu {
+    color: black;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.colorNavegador {
+    background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
+    height: 100px;
+}
+
+a img {
+    width: 5vw;
+    height: 10vh;
+}
+
+.margenesLogo {
+    top: 1vh;
+    left: 2vw;
+    margin-top: 7px;
+}
+
+body {
+    background-color: #FFF1E6;
+}
+
+.seccionPrincipal {
+    height: 400vh;
+    display: grid;
+    grid-template-areas: 
+    "h1 ."
+    "tituloPan1 ."
+    "botonPan1 imagenPan1"
+    "textoPan1 imagenPan1"
+    ". tituloPan2"
+    "imagenPan2 botonPan2"
+    "imagenPan2 textoPan2"
+    "tituloPan3 ."
+    "botonPan3 imagenPan3"
+    "textoPan3 imagenPan3"
+    ". tituloPan4"
+    "imagenPan4 botonPan4"
+    "imagenPan4 textoPan4";
+    grid-template-columns: auto;
+    grid-template-rows: 30vh 25vh 10vh 45vh 25vh 10vh 45vh 25vh 10vh 45vh 25vh 10vh 50vh;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: start;
+    animation-duration: 300s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+ .botonPan1 {
+    grid-area: botonPan1;
+    color: black;
+    height: 3vh;
+    width: 8vw;
+    margin-left: 20vw;
+ }
+
+ .botonPan2 {
+    grid-area: botonPan2;
+    color: black;
+    height: 3vh;
+    width: 8vw;
+    margin-left: 20vw;
+ }
+
+ .botonPan3 {
+    grid-area: botonPan3;
+    color: black;
+    height: 3vh;
+    width: 8vw;
+    margin-left: 20vw;
+ }
+
+ .botonPan4 {
+    grid-area: botonPan4;
+    color: black;
+    height: 3vh;
+    width: 8vw;
+    margin-left: 20vw;
+ }
+
+h1 {
+    grid-area: h1;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.tituloPan1 {
+    grid-area: tituloPan1;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.tituloPan2 {
+    grid-area: tituloPan2;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.tituloPan3 {
+    grid-area: tituloPan3;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.tituloPan4 {
+    grid-area: tituloPan4;
+    font-family: sans-serif;
+    font-size: 10vh;
+    color: rgb(159, 163, 133);
+    margin-left: 5vw;
+    align-self: flex-end;
+}
+
+.textoPan1 {
+    grid-area: textoPan1;
+    justify-self: center;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+}
+
+.textoPan2 {
+    grid-area: textoPan2;
+    justify-self: center;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+    margin-right: 5vw;
+}
+
+.textoPan3 {
+    grid-area: textoPan3;
+    justify-self: center;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+}
+
+.textoPan4 {
+    grid-area: textoPan4;
+    align-self: initial;
+    width: 40vw;
+    font-size: 2vw;
+    font-family: 'Indie Flower', cursive; 
+    color: black;
+    margin-right: 5vw;
+}
+
+.imagenPan1 {
+    grid-area: imagenPan1;
+    width: 20rem;
+    justify-self: start;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+
+}
+
+.imagenPan2 {
+    grid-area: imagenPan2;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px 4px 4px 5vw;
+}
+
+.imagenPan3 {
+    grid-area: imagenPan3;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px;
+}
+
+.imagenPan4 {
+    grid-area: imagenPan4;
+    width: 20rem;
+    border: solid 1vh black;
+    padding: 1vh;
+    margin: 4px 4px 4px 5vw;
+}
+
+/*  transformaciones y transiciones de la página  */
+
+
+@keyframes aparecer {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+h1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.tituloPan1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.tituloPan2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.tituloPan3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.tituloPan4:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.textoPan1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.textoPan2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.textoPan3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.textoPan4:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan2:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan3:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imagenPan4:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(214, 186, 124);
+    height: 15vh;
+    top: 100vh;
+    padding: 2px, 1px, 2px, 1px;
+    background-image: linear-gradient(#FFF1E6, white);
+    padding: 2px,1px,2px,1px;
+}
+
+
+
