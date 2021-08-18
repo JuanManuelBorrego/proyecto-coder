@@ -1,3 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.posicionMenu {
+    color: black;
+}
+
+.colorNavegador {
+    background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
+    height: 100px;
+}
+
+a img {
+    width: 5vw;
+    height: 10vh;
+    margin-top: 7px;
+}
+
+.margenesLogo {
+    top: 1vh;
+    left: 2vw;
+}
+
+body {
+    background-color: #FFF1E6;
+}
+
 .seccionPrincipal {
     height: 400vh;
     display: grid;
@@ -171,5 +211,16 @@ h1 {
     margin: 4px 4px 4px 5vw;
 }
 
-/*  transformaciones y transiciones de la página  */
+footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(214, 186, 124);
+    height: 15vh;
+    top: 100vh;
+    padding: 2px, 1px, 2px, 1px;
+    background-image: linear-gradient(#FFF1E6, white);
+    padding: 2px,1px,2px,1px;
+}
+
 
