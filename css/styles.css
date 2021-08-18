@@ -65,107 +65,48 @@ body {
     100% {opacity: 1;}
 }
 
-.section1:hover .section1__titulo {
+.section1:hover .primeraAparicion{
     animation-duration: 150s;
     animation-name: primeraAparicion;
     animation-iteration-count: infinite;
 }
 
-.section1:hover .section1__texto1 {
+.section2:hover .primeraAparicion{
+    animation-duration: 150s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
+}
+
+.section3:hover .primeraAparicion{
+    animation-duration: 150s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
+}
+
+
+.section1:hover .segundaAparicion {
     animation-duration: 150s;
     animation-name: segundaAparicion;
     animation-iteration-count: infinite;
 }
 
-.section1:hover .section1__texto2 {
-    animation-duration: 150s;
-    animation-name: segundaAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section1:hover .section1__foto1 {
-    animation-duration: 150s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section1:hover .section1__foto2 {
-    animation-duration: 150s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section2:hover .section2__titulo {
-    animation-duration: 150s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section2:hover .section2__foto1 {
-    animation-duration: 200s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section2:hover .section2__foto2 {
-    animation-duration: 200s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section2:hover .section2__texto1 {
+.section2:hover .segundaAparicion {
     animation-duration: 200s;
     animation-name: segundaAparicion;
     animation-iteration-count: infinite; 
 }
 
-.section2:hover .section2__foto3 {
-    animation-duration: 200s;
-    animation-name: segundaAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section2:hover .section2__foto4 {
+.section2:hover .terceraAparicion {
     animation-duration: 200s;
     animation-name: terceraAparicion;
     animation-iteration-count: infinite;
 }
 
-.section2:hover .section2__texto2 {
-    animation-duration: 200s;
-    animation-name: terceraAparicion;
-    animation-iteration-count: infinite;
-}
 
-.section2:hover .section2__foto5 {
+.section2:hover .cuartaAparicion {
     animation-duration: 200s;
     animation-name: cuartaAparicion;
     animation-iteration-count: infinite;
-}
-
-.section2:hover .section2__texto3 {
-    animation-duration: 200s;
-    animation-name: cuartaAparicion;
-    animation-iteration-count: infinite;
-}
-
-
-.section3:hover .section3__titulo{
-    animation-duration: 300s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
-
-.section3:hover .seccion3__tabla {
-    animation-duration: 300s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite; 
-}
-
-.section3:hover .section3__botonTabla {
-    animation-duration: 300s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;  
 }
 
 .apariciones {
@@ -174,27 +115,12 @@ body {
     animation-iteration-count: infinite;
 }
 
-.section1__titulo:hover {
+.transformacion:hover {
     transform: scale(1.1);
     transition: 1s;
 }
 
-.section1__foto1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section1__foto2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section1__foto3:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section1__foto4:hover {
+.section1__foto:hover {
     transform: scale(1.1);
     transition: 1s;
 }
