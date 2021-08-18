@@ -110,8 +110,9 @@ body {
 }
 
 .apariciones {
+    opacity: 0;
     animation-duration: 300s;
-    animation-name: aparecer;
+    animation-name: primeraAparicion;
     animation-iteration-count: infinite;
 }
 
@@ -119,93 +120,6 @@ body {
     transform: scale(1.1);
     transition: 1s;
 }
-
-.section1__foto:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-
-.section2__foto1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section1__texto1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section1__foto2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section1__texto2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__titulo:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__foto1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__foto2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__foto3:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__foto3:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__foto4:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__foto5:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section2__texto1:hover {
-    transform: scale(1.2);
-    transition: 1s;
-}
-
-.section2__texto2:hover {
-    transform: scale(1.2);
-    transition: 1s;
-}
-
-.section2__texto3:hover {
-    transform: scale(1.2);
-    transition: 1s;
-}
-
-.seccion3__tabla:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.section3__titulo:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
 
 .footer__titulo:hover {
     transform: scale(1.1);

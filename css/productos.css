@@ -60,9 +60,6 @@ body {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-items: start;
-    animation-duration: 300s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
 }
 
  .botonPan1 {
@@ -215,90 +212,4 @@ h1 {
 }
 
 /*  transformaciones y transiciones de la página  */
-
-
-@keyframes aparecer {
-    0% {opacity: 0;}
-    1% {opacity: 1;}
-    100% {opacity: 1;}
-}
-
-h1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.tituloPan1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.tituloPan2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.tituloPan3:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.tituloPan4:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.textoPan1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.textoPan2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.textoPan3:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.textoPan4:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.imagenPan1:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.imagenPan2:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.imagenPan3:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.imagenPan4:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-footer nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(214, 186, 124);
-    height: 15vh;
-    top: 100vh;
-    padding: 2px, 1px, 2px, 1px;
-    background-image: linear-gradient(#FFF1E6, white);
-    padding: 2px,1px,2px,1px;
-}
-
-
 
