@@ -39,17 +39,16 @@ body {
 }
 
 main {
-    height: 150vh;
+    height: auto;
     display: grid;
     grid-template-areas: 
-    "h1 ."
-    "h2 h2"
+    "h1 main__imagen"
     "p main__imagen"
     "main__boton .";
     grid-template-columns: 45vw 45vw;
-    grid-template-rows: 20vh auto auto auto 5vh;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
     justify-content: center;
     align-content: space-around;
     animation-duration: 300s;
@@ -60,16 +59,7 @@ main {
 h1 {
     grid-area: h1;
     font-family: sans-serif;
-    font-size: 10vh;
-    color: rgb(159, 163, 133);
-    margin-left: 5vw;
-    align-self: flex-end;
-}
-
-h2 {
-    grid-area: h2;
-    font-family: sans-serif;
-    font-size: 5vh;
+    font-size: 65px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     align-self: flex-end;
@@ -77,7 +67,8 @@ h2 {
 
 .main__imagen {
     grid-area: main__imagen;
-    width: 20rem;
+    width: 100%;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -86,19 +77,22 @@ h2 {
 p {
     grid-area: p;
     justify-self: center;
+    align-self: center;
     width: 40vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
 }
 
 .main__boton {
     grid-area: main__boton;
+    justify-self: center;
     color: black;
     height: 3vh;
     width: 8vw;
-    margin-left: 20vw;
+    margin-left: 5px;
 }
+    
 
 footer nav ul {
     display: flex;
