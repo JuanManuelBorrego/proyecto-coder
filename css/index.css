@@ -8,6 +8,7 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
 ul li a {
@@ -25,8 +26,8 @@ ul li a {
 
 a img {
     margin-top: 7px;
-    width: 5vw;
-    height: 10vh;
+    width: 4vw;
+    height: 6vh;
 }
 
 .margenesLogo {
@@ -37,7 +38,7 @@ a img {
 /*  main  */
 
 main {
-    height: 250vh;
+    height: 300vh;
     background-image: url(../images/20.jpeg);
     background-repeat:no-repeat;
     background-size:cover;
@@ -57,7 +58,7 @@ main {
 .animate__zoomIn {
     width: 60vw;
     color: rgb(159, 163, 133);
-    font-size: 10vh;
+    font-size: 65px;
     font-family: sans-serif; 
     margin-left: 10vw;
     text-align: justify;
@@ -65,15 +66,15 @@ main {
 
 .main__texto {
     width: 40vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive;
     color: white;
     margin-top: 40vh;
-    margin-left: 30vw;
+    margin-left: 40vw;
 }
 
 h1 {
-    font-size: 15vh;
+    font-size: 65px;
     font-family: sans-serif;
     color: rgb(206, 159, 57);
     margin-left: 5vw;
@@ -83,17 +84,19 @@ h1 {
 /*  seccion destinada a "Sobre Mi"  */
 
 .section1 {
-    height: 200vh;
+    height: auto;
     display: grid;
     grid-template-areas:
-   "section1__titulo section1__foto1"
+    ". ."
+    "section1__titulo ."
+   ". section1__foto1"
    "section1__texto1 section1__foto1"
    "section1__foto2 ."
    "section1__foto2 section1__texto2";
     grid-template-columns: 45vw;
-    grid-template-rows: 50vh;
+    grid-template-rows: 10vh auto 10vh auto 10vh auto;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;;
+    grid-row-gap: 2px;;
     background-color: #FFF1E6;
     justify-items: center;
     align-items: flex-end;
@@ -102,7 +105,7 @@ h1 {
 .section1__titulo {
     grid-area: section1__titulo;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(162, 163, 155);
     margin-left: 5vw;
     align-self: flex-end;
@@ -112,7 +115,8 @@ h1 {
 .section1__foto1 {
     grid-area: section1__foto1;
     align-self: center;
-    width: 20rem;
+    width: 25vw;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin-top: 20px;
@@ -122,7 +126,8 @@ h1 {
 .section1__foto2 {
     grid-area: section1__foto2;
     align-self: start;
-    width: 20rem;
+    width: 25vw;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -131,9 +136,10 @@ h1 {
 
 .section1__texto1 {
     grid-area: section1__texto1;
-    justify-self: center;
+    justify-self: end;
+    align-self: flex-start;
     width: 15vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     opacity: 0;
@@ -141,9 +147,9 @@ h1 {
 
 .section1__texto2 {
     grid-area: section1__texto2;
-    justify-self: center;
+    justify-self: start;
     width: 15vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-bottom: 40vh;
@@ -154,14 +160,10 @@ h1 {
     margin-left: 30vw;
 }
 
-/*  transformaciones y transiciones de seccion 1  */
-
-
-/*  seccion 2 referente a "Productos"  */
-
+/* seccion destinada a productos*/
 
 .section2 {
-    height: 300vh;
+    height: auto;
     display: grid;
     grid-template-areas:
     "section2__titulo section2__titulo . section2__foto1 ."
@@ -172,7 +174,7 @@ h1 {
     ". section2__foto4 section2__texto3 section2__foto5 ."
     ".section2__foto4 section2__texto3 section2__foto5 .";
     grid-template-columns: 10% 25% 25% 20% auto ;
-    grid-template-rows: 200px 200px 15% 15% 15% auto ;
+    grid-template-rows: 200px 100px 15% 15% 15% auto ;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     background-color: #FFF1E6;
@@ -182,7 +184,7 @@ h1 {
     grid-area: section2__titulo;
     width: 50vw;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(162, 163, 155);
     position: relative;
     opacity: 0;
@@ -202,7 +204,8 @@ h1 {
 .section2__foto1 {
     grid-area: section2__foto1;
     align-self: center;
-    width: 20rem;
+    width: auto;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -211,7 +214,8 @@ h1 {
 
 .section2__foto2 {
     grid-area: section2__foto2;
-    width: 20rem;
+    width: auto;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -220,7 +224,8 @@ h1 {
 
 .section2__foto3 {
     grid-area: section2__foto3;
-    width: 20rem;
+    width: auto;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -229,7 +234,8 @@ h1 {
 
 .section2__foto4 {
     grid-area: section2__foto4;
-    width: 20rem;
+    width: auto;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -238,7 +244,8 @@ h1 {
 
 .section2__foto5 {
     grid-area: section2__foto5;
-    width: 20rem;
+    width: auto;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -249,7 +256,7 @@ h1 {
     grid-area: section2__texto1;
     justify-self: center;
     width: 15vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black; 
     opacity: 0;
@@ -259,7 +266,7 @@ h1 {
     grid-area: section2__texto2;
     align-self: flex-start;
     width: 15vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black; 
 }
@@ -269,14 +276,11 @@ h1 {
     align-self: center;
     justify-self: center;
     width: 15vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black; 
     opacity: 0;
 }
-
-/*  transformaciones y transiciones de seccion 2  */
-
 
 /* seccion 3 que referencia a "Talleres y Asesorías" */
 
@@ -285,7 +289,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 140vh;
+    height: auto;
     background-color: #FFF1E6;
 }
 
@@ -298,7 +302,7 @@ h1 {
 .section3__titulo {
     width: 50vw;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 2vw;
     opacity: 0;
@@ -338,9 +342,6 @@ table tr td ul li {
     color: white;
 }
 
-/*  transformaciones y transiciones de seccion 3  */
-
-
 /* footer que hace referencia a la sección "Hablemos"  */
 
 
@@ -366,16 +367,17 @@ footer {
 .footer__titulo {
     color: rgb(159, 163, 133);
     font-family: sans-serif;
-    font-size: 10vh;
-    margin-left: 35vw;
+    font-size: 50px;
+    text-align: center;
 }
 
 .footer__texto {
     color: black;
     width: 80vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive;
     margin-left: 10vw;
+    text-align: center;
 }
 
 .footer__boton {
@@ -384,6 +386,4 @@ footer {
     margin-left: 80vw;
     margin-bottom: 20vh;
 }
-
-/*  transformaciones y transiciones de seccion footer */
 

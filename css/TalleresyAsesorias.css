@@ -8,6 +8,7 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
 ul li a {
@@ -24,8 +25,8 @@ ul li a {
 }
 
 a img {
-    width: 5vw;
-    height: 10vh;
+    width: 4vw;
+    height: 6vh;
     margin-top: 7px;
 }
 
@@ -37,6 +38,8 @@ a img {
 body {
     background-color: #FFF1E6;
 }
+
+/*estructura de la página utilizando grids*/
 
 main {
     height: auto;
@@ -51,9 +54,9 @@ main {
     "subtitulo3 ."
     "texto3 imagenPan3";
     grid-template-columns: auto;
-    grid-template-rows: auto 5vh auto 5vh auto 20px 5vh auto;
+    grid-template-rows: auto 5vh auto 5vh auto 40px 5vh auto;
     grid-column-gap: 20px;
-    grid-row-gap: 30px;
+    grid-row-gap: 20px;
     align-content: space-around ;
     justify-items: center;
     animation-duration: 300s;
@@ -61,14 +64,7 @@ main {
     animation-iteration-count: infinite;
 }
 
-h1 {
-    grid-area: h1;
-    font-size: 65px;
-    font-family: sans-serif;
-    color: rgb(206, 159, 57);
-    margin-left: 5vw;
-    text-align: center;
-}
+/*imágenes*/
 
 .imagenPan1 {
     grid-area: imagenPan1;
@@ -80,7 +76,7 @@ h1 {
 }
 
 .imagenPan2 {
-    grid-area: imagenPan1;
+    grid-area: imagenPan2;
     width: 35vw;
     height: 50vh;
     border: solid 1vh black;
@@ -89,12 +85,23 @@ h1 {
 }
 
 .imagenPan3 {
-    grid-area: imagenPan1;
+    grid-area: imagenPan3;
     width: 35vw;
     height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
+}
+
+/*títulos*/
+
+h1 {
+    grid-area: h1;
+    font-size: 65px;
+    font-family: sans-serif;
+    color: rgb(206, 159, 57);
+    margin-left: 5vw;
+    text-align: center;
 }
 
 
@@ -127,6 +134,8 @@ h1 {
     align-self: flex-end;
 }
 
+/*textos*/
+
 .texto1 {
     grid-area: texto1;
     width: 40vw;
@@ -150,6 +159,8 @@ h1 {
     font-family: 'Indie Flower', cursive; 
     color: black;
 }
+
+/*footer*/
 
 footer nav ul {
     display: flex;

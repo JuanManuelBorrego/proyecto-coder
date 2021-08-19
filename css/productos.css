@@ -8,6 +8,7 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
 ul li a {
@@ -24,8 +25,8 @@ ul li a {
 }
 
 a img {
-    width: 5vw;
-    height: 10vh;
+    width: 4vw;
+    height: 6vh;
     margin-top: 7px;
 }
 
@@ -38,8 +39,10 @@ body {
     background-color: #FFF1E6;
 }
 
+/*estructuta de la página utilizando grids*/
+
 .seccionPrincipal {
-    height: 400vh;
+    height: auto;
     display: grid;
     grid-template-areas: 
     "h1 ."
@@ -56,11 +59,13 @@ body {
     "imagenPan4 botonPan4"
     "imagenPan4 textoPan4";
     grid-template-columns: auto;
-    grid-template-rows: 30vh 25vh 10vh 45vh 25vh 10vh 45vh 25vh 10vh 45vh 25vh 10vh 50vh;
+    grid-template-rows: auto;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 2px;
     justify-items: start;
 }
+
+/*botones*/
 
  .botonPan1 {
     grid-area: botonPan1;
@@ -94,10 +99,12 @@ body {
     margin-left: 20vw;
  }
 
+/*titulos*/
+
 h1 {
     grid-area: h1;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 65px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     align-self: flex-end;
@@ -105,8 +112,9 @@ h1 {
 
 .tituloPan1 {
     grid-area: tituloPan1;
+    justify-self: start;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     align-self: flex-end;
@@ -114,8 +122,9 @@ h1 {
 
 .tituloPan2 {
     grid-area: tituloPan2;
+    justify-self: start;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     align-self: flex-end;
@@ -123,8 +132,9 @@ h1 {
 
 .tituloPan3 {
     grid-area: tituloPan3;
+    justify-self: start;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     align-self: flex-end;
@@ -132,18 +142,21 @@ h1 {
 
 .tituloPan4 {
     grid-area: tituloPan4;
+    justify-self: start;
     font-family: sans-serif;
-    font-size: 10vh;
+    font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     align-self: flex-end;
 }
 
+/*textos*/
+
 .textoPan1 {
     grid-area: textoPan1;
     justify-self: center;
     width: 40vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
 }
@@ -152,7 +165,7 @@ h1 {
     grid-area: textoPan2;
     justify-self: center;
     width: 40vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-right: 5vw;
@@ -162,7 +175,7 @@ h1 {
     grid-area: textoPan3;
     justify-self: center;
     width: 40vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
 }
@@ -171,16 +184,19 @@ h1 {
     grid-area: textoPan4;
     align-self: initial;
     width: 40vw;
-    font-size: 2vw;
+    font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-right: 5vw;
 }
 
+/*imágenes*/
+
 .imagenPan1 {
     grid-area: imagenPan1;
-    width: 20rem;
-    justify-self: start;
+    width: 35vw;
+    height: 50vh;
+    justify-self: center;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -189,7 +205,9 @@ h1 {
 
 .imagenPan2 {
     grid-area: imagenPan2;
-    width: 20rem;
+    justify-self: center;
+    width: 35vw;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
@@ -197,7 +215,9 @@ h1 {
 
 .imagenPan3 {
     grid-area: imagenPan3;
-    width: 20rem;
+    justify-self: center;
+    width: 35vw;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
@@ -205,11 +225,15 @@ h1 {
 
 .imagenPan4 {
     grid-area: imagenPan4;
-    width: 20rem;
+    justify-self: center;
+    width: 35vw;
+    height: 50vh;
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }
+
+/*footer*/
 
 footer nav ul {
     display: flex;
