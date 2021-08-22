@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mi</title>
     <link rel="stylesheet" type="text/css" href="../css/sobreMi.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    <link href = "https: //fonts.googleapis.com/css2? family = Indie + Flower & display = swap "rel =" stylesheet ">
+    <link href = "https: //fonts.googleapis.com/css2? family = Indie + Flower & display = swap "rel =" stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="fondoGradiente">
@@ -26,8 +29,16 @@
         </header>
         <main class="apariciones">
             <h1 class="transformacion">La masa como filosofía de vida</h1>
-            <img src="../images/mar-uruguayo.png" class="main__imagen transformacion" alt="Foto ilustrativa del autor de los panes en algún contexto relevante">
-            <p class="transformacion">Como los hidratos de carbono son absolutamente fundamentales en nuestra dieta, por mucho que hoy en día estén demonizados, tenemos que incluirlos en todas nuestras comidas principales. Son tan importantes que hasta un 50-60% del total de la energía aportada en la dieta debe provenir de los hidratos de carbono. Y sí, en las cenas también debemos incluirlos. Eso sí, en la cantidad necesaria, claro está.</p>
+            <div class="container">
+                <div class="row">
+                    <article class="col-md-6">
+                        <p class="transformacion">Como los hidratos de carbono son absolutamente fundamentales en nuestra dieta, por mucho que hoy en día estén demonizados, tenemos que incluirlos en todas nuestras comidas principales. Son tan importantes que hasta un 50-60% del total de la energía aportada en la dieta debe provenir de los hidratos de carbono. Y sí, en las cenas también debemos incluirlos. Eso sí, en la cantidad necesaria, claro está.</p>
+                    </article>
+                    <article class="col-md-6">
+                    <img src="../images/mar-uruguayo.png" class="main__imagen transformacion"  alt="Foto ilustrativa del autor de los panes en algún contexto relevante">
+                    </article>
+                </div>
+            </div>
             <button class="main__boton transformacion">
                 <a href="https://open.spotify.com/artist/7Knn0jD4uLt7M3zY3jKZUc?si=0BuT4pnHSQeHBNz4Ur6k1A&dl_branch=1">PlayList on Spotify</a>
             </button>

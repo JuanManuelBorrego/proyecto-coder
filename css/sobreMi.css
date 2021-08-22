@@ -52,17 +52,6 @@ body{
 
 main {
     height: 100vh;
-    display: grid;
-    grid-template-areas: 
-    "h1 main__imagen"
-    "p main__imagen"
-    "main__boton .";
-    grid-template-columns: 45vw 45vw;
-    grid-template-rows: auto auto auto auto;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    justify-content: center;
-    align-content: space-around;
     animation-duration: 300s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
@@ -71,7 +60,6 @@ main {
 /*elementos*/
 
 h1 {
-    grid-area: h1;
     font-family: sans-serif;
     font-size: 65px;
     color: rgb(159, 163, 133);
@@ -80,8 +68,7 @@ h1 {
 }
 
 .main__imagen {
-    grid-area: main__imagen;
-    width: 100%;
+    width: 45%;
     height: 50vh;
     border: solid 1vh black;
     align-self: flex-end;
@@ -90,13 +77,16 @@ h1 {
 }
 
 p {
-    grid-area: p;
     justify-self: center;
     align-self: center;
-    width: 40vw;
+    width: 45vw;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
+}
+
+.row>* {
+    width: 45%;
 }
 
 .main__boton {

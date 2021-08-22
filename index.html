@@ -7,6 +7,8 @@
     <title>Panes y Canciones / Inicio</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Indie + Flower & display = swap "rel =" stylesheet ">
@@ -14,23 +16,55 @@
 </head>
 <body>
     <header>
-        <nav class="colorNavegador"> 
-            <ul>
-                <li><a href="./index.html"><img src="./images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a></li>
-                <li><a href="./pages/Productos.html" class="posicionMenu">Productos</a></li>
-                <li><a href="pages/talleres-y-asesorias.html" class="posicionMenu">Talleres y Asesorías</a></li>
-                <li><a href="./pages/sobre-mi.html" class="posicionMenu">Sobre Mí</a></li>
-                <li><a href="./pages/hablemos.html" class="posicionMenu">Hablemos</a></li>
+        <nav class="colorNavegador container-fluid"> 
+            <ul class="row">
+                <li class="col-md-4"><a href="./index.html"><img src="./images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a></li>
+                <li class="col-md-2"><a href="./pages/Productos.html" class="posicionMenu">Productos</a></li>
+                <li class="col-md-2"><a href="pages/talleres-y-asesorias.html" class="posicionMenu">Talleres y Asesorías</a></li>
+                <li class="col-md-2"><a href="./pages/sobre-mi.html" class="posicionMenu">Sobre Mí</a></li>
+                <li class="col-md-2"><a href="./pages/hablemos.html" class="posicionMenu">Hablemos</a></li>
             </ul>    
         </nav>
     </header>
     <!--Intoduccion a la página-->
-    <main>
-        <div class="inicioPagina">
-            <p class="animate__animated animate__zoomIn">ENTRE MANOS <br> LA VIDA SE LAS TRAE</p>
-            <p class="main__texto">"Nuestro camino es poner la masa en el horno y observarla cuidadosamente. Una vez que se sabe cómo se convierte en pan la masa, se comprende también la iluminación." </p>
-            <h1>PANES <br> Y <br> CANCIONES</h1>
-        </div>
+    <main class="row justify-content-center">
+    <div class="col-sm-6">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/Las-mejores-panaderias-del-mundo-Portada.jpeg" alt="Los Angeles" width="100%" height="600px">
+      <div class="carousel-caption">
+        <h3>Los Angeles</h3>
+        <p>We had such a great time in LA!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/panes en la mesa con harina.jpeg" alt="Chicago" width="100%" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img src="./images/panaderiaInterior.jpeg" alt="New York" width="100%" height="600px">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+    </div>
+    </div> 
     </main>
     <!--seccion dedicada a "Sobre Mi"-->
     <section class="section1">
@@ -40,9 +74,9 @@
                 <a href="./pages/sobre-mi.html">Ver Más</a>
             </button>
         </div>
-            <img class="section1__foto1 primeraAparicion transformacion" src="./images/3.jpeg" alt="muestraPan">
+            <img class="section1__foto1 primeraAparicion transformacion rounded-circle" src="./images/3.jpeg" alt="muestraPan">
             <p class="section1__texto1 segundaAparicion transformacion">"La práctica consiste en repetir una y otra vez hasta descubir la manera de convetirse en pan."</p>
-            <img class="section1__foto2 primeraAparicion transformacion" src="./images/4.jpeg" alt="muestraBolsaGranos">
+            <img class="section1__foto2 primeraAparicion transformacion rounded-circle" src="./images/4.jpeg" alt="muestraBolsaGranos">
             <p class="section1__texto2 segundaAparicion transformacion">Somos lo que comemos, pensamos y vivimos. Y eso se transmite desde el pan de cada día.</p>
     </section>
     <!--seccion dedicada "Productos"-->
@@ -53,11 +87,11 @@
                 <a href="./pages/Productos.html">Ver Más</a>
             </button>
         </div>
-        <img class="section2__foto1 primeraAparicion transformacion" src="./images/10.jpeg" alt="muestraPanesNegros">
-        <img class="section2__foto2 primeraAparicion transformacion" src="./images/11.jpeg" alt="PanEnBolsa">
-        <img class="section2__foto3 segundaAparicion transformacion" src="./images/12.jpeg" alt="PanesEnBolsas">
-        <img class="section2__foto4 terceraAparicion transformacion" src="./images/13.jpeg" alt="medialuna">
-        <img class="section2__foto5 cuartaAparicion transformacion" src="./images/14.jpeg" alt="PanesEnBolsas">
+        <img class="section2__foto1 primeraAparicion transformacion rounded-circle" src="./images/10.jpeg" alt="muestraPanesNegros">
+        <img class="section2__foto2 primeraAparicion transformacion rounded-circle" src="./images/11.jpeg" alt="PanEnBolsa">
+        <img class="section2__foto3 segundaAparicion transformacion rounded-circle" src="./images/12.jpeg" alt="PanesEnBolsas">
+        <img class="section2__foto4 terceraAparicion transformacion rounded-circle" src="./images/13.jpeg" alt="medialuna">
+        <img class="section2__foto5 cuartaAparicion transformacion rounded-circle" src="./images/14.jpeg" alt="PanesEnBolsas">
         <p class="section2__texto1 primeraAparicion transformacion">"El mejor pan que probamos con mis amigas"</p>
         <p class="section2__texto2 terceraAparicion transformacion">"Lo que están las mediaslunas de Panes y Canciones es inenarrable, gente"</p>
         <p class="section2__texto3 cuartaAparicion transformacion">"No prueben nada si tienen voluntad débil. Se los advierto, ¡es una trampa de la que no se vuelve! ¡No lo hagan!"</p>
@@ -125,5 +159,8 @@
             </nav>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
