@@ -68,27 +68,24 @@ main {
 
 .imagenPan1 {
     grid-area: imagenPan1;
-    width: 35vw;
-    height: 50vh;
-    border: solid 1vh black;
+    width: 20vw;
+    height: 35vh;
     padding: 1vh;
     margin: 4px;
 }
 
 .imagenPan2 {
     grid-area: imagenPan2;
-    width: 35vw;
-    height: 50vh;
-    border: solid 1vh black;
+    width: 20vw;
+    height: 35vh;
     padding: 1vh;
     margin: 4px;
 }
 
 .imagenPan3 {
     grid-area: imagenPan3;
-    width: 35vw;
-    height: 50vh;
-    border: solid 1vh black;
+    width: 20vw;
+    height: 35vh;
     padding: 1vh;
     margin: 4px;
 }

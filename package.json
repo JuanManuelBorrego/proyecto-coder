@@ -19,7 +19,7 @@
   "dependencies": {},
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/sobreMi.scss css/sobreMi.css",
+    "build-css": "node-sass --include-path scss scss/index.scss css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "description": ""

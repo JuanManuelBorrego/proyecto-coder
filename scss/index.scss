@@ -1,113 +1,92 @@
 $anchoImg: 4vw;
 $altoImg: 6vh;
-
+@import "styles.scss";
 * {
     margin: 0px;
     padding: 0px;
 }
 
-nav{
-    height: 100px;
-    ul {
-        li{ 
-            a{ 
-                .margenesLogo {
-                top: 1vh;
-                left: 2vw;
-                text-decoration: none}
-                img {
-                    margin-top: 7px;
-                    width: $anchoImg;
-                    height: $altoImg;
-                    color: white;
+header{
+    background-image: url(../images/panEnHd.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    div {
+        height: 90vh;
+        background-image: $gradiente-inverso;
+        nav{
+            h1 {
+                font-size: $font-syze-h1;
+                font-family: sans-serif;
+                color: rgb(162, 163, 155);
+            }
+            #titulo{
+                margin-top: 25vh;
+            }
+            p{
+                font-size: $p-font-syze;
+                font-family: 'Indie Flower', cursive; 
+            }
+            ul {
+                border-top: 1vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                list-style: none; 
+                li{ 
+                    a{ 
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
             }
-        }
+       }
     }
 }
 
-/*  main  */
-
-main {
-    height: auto;
-    background-repeat:no-repeat;
-    background-size:cover;
-    border-bottom: black solid 1vh;
-    padding: 1px, 2px, 1px, 2px;
-    margin: 1px, 1px, 1px, 1px;
-}
-
-main div {
-    display: flex;
-    flex-direction: row;
-    flex-flow: space-around;
-    height: 600px;
-}
-
-.inicioPagina {
-    height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.027));
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.animate__zoomIn {
-    width: 60vw;
-    color: rgb(159, 163, 133);
-    font-size: 65px;
-    font-family: sans-serif; 
-    margin-left: 10vw;
-    text-align: justify;
-}
-
-.main__texto {
-    width: 40vw;
-    font-size: 20px;
-    font-family: 'Indie Flower', cursive;
-    color: white;
-    margin-top: 40vh;
-    margin-left: 40vw;
-}
-
-h1 {
-    font-size: 65px;
-    font-family: sans-serif;
-    color: rgb(206, 159, 57);
-    margin-left: 5vw;
-    text-align: center;
-}
 
 /*  seccion destinada a "Sobre Mi"  */
 
 .section1 {
-    height: auto;
-    display: grid;
-    grid-template-areas:
-    ". ."
-    "section1__titulo ."
-   ". section1__foto1"
-   "section1__texto1 section1__foto1"
-   "section1__foto2 ."
-   "section1__foto2 section1__texto2";
-    grid-template-columns: 45vw;
-    grid-template-rows: 10vh auto 10vh auto 10vh auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 2px;;
-    background-color: #FFF1E6;
-    justify-items: center;
-    align-items: flex-end;
-    .section1__titulo {
-        grid-area: section1__titulo;
-        font-family: sans-serif;
-        font-size: 50px;
-        color: rgb(162, 163, 155);
-        margin-left: 5vw;
-        align-self: flex-end;
-        opacity: 0;
-        #boton1 {
-            margin-left: 30vw;
-            font-size: 2vw;
+    background-image: url(../images/masa.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    article {
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        ". ."
+        "section1__titulo ."
+        ". section1__foto1"
+        "section1__texto1 section1__foto1"
+        "section1__foto2 ."
+        "section1__foto2 section1__texto2";
+        grid-template-columns: 45vw;
+        grid-template-rows: 10vh auto 10vh auto 10vh auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 2px;;
+        background-color: #fff1e6c5;
+        justify-items: center;
+        align-items: flex-end;
+        .section1__titulo {
+            grid-area: section1__titulo;
+            font-family: sans-serif;
+            font-size: 50px;
+            color: rgb(162, 163, 155);
+            margin-left: 5vw;
+            align-self: flex-end;
+            opacity: 0;
+            #boton1 {
+                font-size: 1vw;
+                font-style: none;
+                margin-left: 30vw;
+                height: 3vh;
+                width: 8vw;
+                a{
+                    color: black;
+                }
+            }
         }
     }
 
@@ -116,7 +95,6 @@ h1 {
         align-self: center;
         width: 25vw;
         height: 50vh;
-        border: solid 1vh black;
         padding: 1vh;
         margin-top: 20px;
         opacity: 0;
@@ -127,7 +105,6 @@ h1 {
         align-self: start;
         width: 25vw;
         height: 50vh;
-        border: solid 1vh black;
         padding: 1vh;
         margin: 4px;
         opacity: 0;
@@ -159,37 +136,45 @@ h1 {
 /* seccion destinada a productos*/
 
 .section2 {
-    height: auto;
-    display: grid;
-    grid-template-areas:
-    "section2__titulo section2__titulo . section2__foto1 ."
-    "section2__titulo section2__titulo .  section2__foto1 ."
-    ". section2__foto2 section2__texto1 section2__foto1 ."
-    ". section2__foto2 section2__foto3 section2__foto1 ."
-    ". section2__foto4 section2__foto3 section2__texto2 ."
-    ". section2__foto4 section2__texto3 section2__foto5 ."
-    ".section2__foto4 section2__texto3 section2__foto5 .";
-    grid-template-columns: 10% 25% 25% 20% auto ;
-    grid-template-rows: 200px 100px 15% 15% 15% auto ;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    background-color: #FFF1E6;
-    .section2__titulo {
-        grid-area: section2__titulo;
-        width: 50vw;
-        font-family: sans-serif;
-        font-size: 50px;
-        color: rgb(162, 163, 155);
-        position: relative;
-        opacity: 0;
-        margin-top: 5vh;
-        margin-left: 5vw;
-        #boton {
-            position: absolute;
-            bottom: 10px;
-            left: 25vw;
-            color: black;
-            font-size: 2vw;
+    background-image: url(../images/panes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    article {
+        height: auto;
+        display: grid;
+        grid-template-areas:
+        "section2__titulo section2__titulo . section2__foto1 ."
+        "section2__titulo section2__titulo .  section2__foto1 ."
+        ". section2__foto2 section2__texto1 section2__foto1 ."
+        ". section2__foto2 section2__foto3 section2__foto1 ."
+        ". section2__foto4 section2__foto3 section2__texto2 ."
+        ". section2__foto4 section2__texto3 section2__foto5 ."
+        ".section2__foto4 section2__texto3 section2__foto5 .";
+        grid-template-columns: 10% 25% 25% 20% auto ;
+        grid-template-rows: 200px 100px 15% 15% 15% auto ;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        background-color: #fff1e6c5;
+        .section2__titulo {
+            grid-area: section2__titulo;
+            width: 50vw;
+            font-family: sans-serif;
+            font-size: 50px;
+            color: rgb(162, 163, 155);
+            position: relative;
+            opacity: 0;
+            margin-top: 5vh;
+            margin-left: 5vw;
+            #boton {
+                font-size: 1vw;
+                font-style: none;
+                margin-left: 30vw;
+                height: 3vh;
+                width: 8vw;
+                a{
+                    color: black;
+                }
+            }
         }
     }
     .section2__foto1 {
@@ -197,7 +182,6 @@ h1 {
         align-self: center;
         width: auto;
         height: 50vh;
-        border: solid 1vh black;
         padding: 1vh;
         margin: 4px;
         opacity: 0;
@@ -206,8 +190,7 @@ h1 {
     .section2__foto2 {
         grid-area: section2__foto2;
         width: auto;
-        height: 50vh;
-        border: solid 1vh black;
+        height: 30vh;
         padding: 1vh;
         margin: 4px;
         opacity: 0;
@@ -216,8 +199,7 @@ h1 {
     .section2__foto3 {
         grid-area: section2__foto3;
         width: auto;
-        height: 50vh;
-        border: solid 1vh black;
+        height: 30vh;
         padding: 1vh;
         margin: 4px;
         opacity: 0;
@@ -227,7 +209,6 @@ h1 {
         grid-area: section2__foto4;
         width: auto;
         height: 50vh;
-        border: solid 1vh black;
         padding: 1vh;
         margin: 4px;
         opacity: 0;
@@ -237,7 +218,6 @@ h1 {
         grid-area: section2__foto5;
         width: auto;
         height: 50vh;
-        border: solid 1vh black;
         padding: 1vh;
         margin: 4px;
         opacity: 0;
@@ -255,7 +235,8 @@ h1 {
 
     .section2__texto2 {
         grid-area: section2__texto2;
-        align-self: flex-start;
+        align-self: center;
+        justify-content: center;
         width: 15vw;
         font-size: 20px;
         font-family: 'Indie Flower', cursive; 
@@ -282,7 +263,7 @@ h1 {
     flex-direction: column;
     justify-content: space-around;
     height: auto;
-    background-color: #FFF1E6;
+    background-color: #fff1e6c5;
     .section3__titulo {
         width: 50vw;
         font-family: sans-serif;
@@ -292,15 +273,19 @@ h1 {
         opacity: 0;
     }
     .section3__botonTabla {
-        color: black;
-        width: 10vw;
-        margin-bottom: 10vh;
-        margin-left: 45vw;
-        opacity: 0;
+            font-size: 1vw;
+            font-style: none;
+            margin-left: 45vw;
+            height: 3vh;
+            width: 8vw;
+            a{
+                color: black;
+            }
+            opacity: 0;
     }
 
     table {
-        background-image: url(../images/5.jpeg);
+        background-image: url(../images/panConHumo.jpeg);
         background-size: cover;
         background-position: center;
         width: 90vw;
@@ -362,10 +347,15 @@ footer {
     }
     
     .footer__boton {
-        width: 5vw;
+        font-size: 1vw;
+        font-style: none;
+        margin-bottom: 10vh;
+        margin-left: 75vw;
         height: 3vh;
-        margin-left: 80vw;
-        margin-bottom: 20vh;
+        width: 8vw;
+        a{
+            color: black;
+        }
     }
     
     nav {

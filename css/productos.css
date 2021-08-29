@@ -75,12 +75,20 @@ body {
     margin-left: 20vw;
  }
 
+ .botonPan1 a{
+     color: black;
+ }
+
  .botonPan2 {
     grid-area: botonPan2;
     color: black;
     height: 3vh;
     width: 8vw;
     margin-left: 20vw;
+ }
+
+ .botonPan2 a{
+     color: black;
  }
 
  .botonPan3 {
@@ -91,12 +99,19 @@ body {
     margin-left: 20vw;
  }
 
+ .botonPan3 a {
+     color: black;
+ }
+
  .botonPan4 {
     grid-area: botonPan4;
-    color: black;
     height: 3vh;
     width: 8vw;
     margin-left: 20vw;
+ }
+
+ .botonPan4 a {
+     color: black;
  }
 
 /*titulos*/
@@ -194,10 +209,9 @@ h1 {
 
 .imagenPan1 {
     grid-area: imagenPan1;
-    width: 35vw;
-    height: 50vh;
+    width: 25vw;
+    height: 30vh;
     justify-self: center;
-    border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
 
@@ -206,9 +220,8 @@ h1 {
 .imagenPan2 {
     grid-area: imagenPan2;
     justify-self: center;
-    width: 35vw;
-    height: 50vh;
-    border: solid 1vh black;
+    width: 25vw;
+    height: 30vh;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }
@@ -218,7 +231,6 @@ h1 {
     justify-self: center;
     width: 35vw;
     height: 50vh;
-    border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
 }
@@ -226,9 +238,8 @@ h1 {
 .imagenPan4 {
     grid-area: imagenPan4;
     justify-self: center;
-    width: 35vw;
-    height: 50vh;
-    border: solid 1vh black;
+    width: 25vw;
+    height: 30vh;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }

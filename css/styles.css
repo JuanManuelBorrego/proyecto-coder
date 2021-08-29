@@ -81,21 +81,6 @@
     transition: 1s;
 }
 
-.footer__titulo:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.footer__texto:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
-.footer__boton:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
-
 .logoFace:hover {
     transform: scale(1.1);
     transition: 1s;
@@ -116,13 +101,6 @@
     transition: 1s;
 }
 
-$font-syze-h1: 65px;
-$font-syze-h2: 50px;
-$p-font-syze: 20px;
-$ancho-img: 35vw;
-$alto-img: 50vh;
-$altura-principal: 100vh;
-$gradiente : linear-gradient(#FFF1E6, #fff1e67c);
-$gradiente-inverso: linear-gradient(#fff1e67c, #FFF1E6);
 
+ 
 

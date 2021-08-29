@@ -259,12 +259,11 @@ body {
 
 .fondoGradiente {
   background-image: linear-gradient(#FFF1E6, #fff1e67c);
-  height: max-content; }
-
+}
 /*estructura de la página utilizando grids*/
 main {
   color: red;
-  height: 90vh;
+  height: 120vh;
   animation-duration: 300s;
   animation-name: aparecer;
   animation-iteration-count: infinite; }
@@ -278,10 +277,7 @@ h1 {
   align-self: flex-end; }
 
 .main__imagen {
-  width: 45%;
-  height: 50vh;
-  border: solid 1vh black;
-  align-self: flex-end;
+  align-self: flex-start;
   padding: 1vh;
   margin: 4px; }
 
@@ -297,12 +293,15 @@ p {
   width: 45%; }
 
 .main__boton {
-  grid-area: main__boton;
-  justify-self: center;
   color: black;
-  height: 3vh;
-  width: 8vw;
-  margin-left: 5px; }
+  height: 8vh;
+  width: 12vw;
+  margin-left: 40vw;
+}
+
+.main__boton a{
+  color: black;
+}
 
 /*footer*/
 footer nav ul {

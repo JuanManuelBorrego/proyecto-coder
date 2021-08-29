@@ -6,100 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panes y Canciones / Inicio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Indie + Flower & display = swap "rel =" stylesheet ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
+<body class="apariciones">
     <header>
-        <nav class="colorNavegador container-fluid"> 
-            <ul class="row">
-                <li class="col-md-4"><a href="./index.html"><img src="./images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a></li>
-                <li class="col-md-2"><a href="./pages/Productos.html" class="posicionMenu">Productos</a></li>
-                <li class="col-md-2"><a href="pages/talleres-y-asesorias.html" class="posicionMenu">Talleres y Asesorías</a></li>
-                <li class="col-md-2"><a href="./pages/sobre-mi.html" class="posicionMenu">Sobre Mí</a></li>
-                <li class="col-md-2"><a href="./pages/hablemos.html" class="posicionMenu">Hablemos</a></li>
-            </ul>    
-        </nav>
+        <div class="col-md-10 offset-md-1">
+            <nav class="colorNavegador"> 
+                <ul>
+                    <li><a href="./pages/Productos.html" class="posicionMenu">Productos</a></li>
+                    <li><a href="./pages/talleres-y-asesorias.html" class="posicionMenu">Talleres y Asesorías</a></li>
+                    <li><a href="./pages/sobre-mi.html" class="posicionMenu">Sobre Mí</a></li>
+                    <li><a href="./pages/hablemos.html" class="posicionMenu">Hablemos</a></li>
+                </ul>
+                <h1 class="col-md-4 offset-md-4" id="titulo">PANES Y CANCIONES</h1> 
+                <p class="col-md-10 offset-md-2">"La práctica consiste en repetir una y otra vez hasta descubir la manera de convetirse en pan."</p>
+                <img class="col-md-1 offset-md-5" src="./images/manosMasa.png" alt="manosMasa">
+            </nav>
+        </div>
     </header>
-    <!--Intoduccion a la página-->
-    <main class="row justify-content-center">
-    <div class="col-sm-6">
-    <div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./images/Las-mejores-panaderias-del-mundo-Portada.jpeg" alt="Los Angeles" width="100%" height="600px">
-      <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./images/panes en la mesa con harina.jpeg" alt="Chicago" width="100%" height="600px">
-    </div>
-    <div class="carousel-item">
-      <img src="./images/panaderiaInterior.jpeg" alt="New York" width="100%" height="600px">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-    </div>
-    </div> 
-    </main>
     <!--seccion dedicada a "Sobre Mi"-->
     <section class="section1">
-        <div class="section1__titulo primeraAparicion" > 
-            <p class="transformacion">EL PAN COMO FILOSOFÍA DE VIDA</p>
-            <button id="boton1" class="transformacion">
-                <a href="./pages/sobre-mi.html">Ver Más</a>
-            </button>
-        </div>
-            <img class="section1__foto1 primeraAparicion transformacion rounded-circle" src="./images/3.jpeg" alt="muestraPan">
-            <p class="section1__texto1 segundaAparicion transformacion">"La práctica consiste en repetir una y otra vez hasta descubir la manera de convetirse en pan."</p>
-            <img class="section1__foto2 primeraAparicion transformacion rounded-circle" src="./images/4.jpeg" alt="muestraBolsaGranos">
-            <p class="section1__texto2 segundaAparicion transformacion">Somos lo que comemos, pensamos y vivimos. Y eso se transmite desde el pan de cada día.</p>
+        <article>
+            <div class="section1__titulo primeraAparicion" > 
+                <p>EL PAN COMO FILOSOFÍA DE VIDA</p>
+                <button id="boton1">
+                    <a href="./pages/sobre-mi.html">Ver Más</a>
+                </button>
+            </div>
+                <img class="section1__foto1 primeraAparicion transformacion" src="./images/1.png" alt="muestraPan">
+                <p class="section1__texto1 segundaAparicion">"La práctica consiste en repetir una y otra vez hasta descubir la manera de convetirse en pan."</p>
+                <img class="section1__foto2 primeraAparicion transformacion" src="./images/5.png" alt="muestraBolsaGranos">
+                <p class="section1__texto2 segundaAparicion">Somos lo que comemos, pensamos y vivimos. Y eso se transmite desde el pan de cada día.</p>
+        </article>
     </section>
     <!--seccion dedicada "Productos"-->
     <section class="section2">
-        <div class="section2__titulo primeraAparicion transformacion" > 
-            <p class="transformacion">DEL HORNO VIAJAN EXPERIENCIAS Y MOMENTOS PARA ESTAR</p>
-            <button id="boton" class="transformacion">
-                <a href="./pages/Productos.html">Ver Más</a>
-            </button>
-        </div>
-        <img class="section2__foto1 primeraAparicion transformacion rounded-circle" src="./images/10.jpeg" alt="muestraPanesNegros">
-        <img class="section2__foto2 primeraAparicion transformacion rounded-circle" src="./images/11.jpeg" alt="PanEnBolsa">
-        <img class="section2__foto3 segundaAparicion transformacion rounded-circle" src="./images/12.jpeg" alt="PanesEnBolsas">
-        <img class="section2__foto4 terceraAparicion transformacion rounded-circle" src="./images/13.jpeg" alt="medialuna">
-        <img class="section2__foto5 cuartaAparicion transformacion rounded-circle" src="./images/14.jpeg" alt="PanesEnBolsas">
-        <p class="section2__texto1 primeraAparicion transformacion">"El mejor pan que probamos con mis amigas"</p>
-        <p class="section2__texto2 terceraAparicion transformacion">"Lo que están las mediaslunas de Panes y Canciones es inenarrable, gente"</p>
-        <p class="section2__texto3 cuartaAparicion transformacion">"No prueben nada si tienen voluntad débil. Se los advierto, ¡es una trampa de la que no se vuelve! ¡No lo hagan!"</p>
+        <article>
+            <div class="section2__titulo primeraAparicion" > 
+                <p>DEL HORNO VIAJAN EXPERIENCIAS Y MOMENTOS PARA ESTAR</p>
+                <button id="boton">
+                    <a href="./pages/Productos.html">Ver Más</a>
+                </button>
+            </div>
+            <img class="section2__foto1 primeraAparicion transformacion" src="./images/9.png" alt="muestraPanesNegros">
+            <img class="section2__foto2 primeraAparicion transformacion" src="./images/5.png" alt="PanEnBolsa">
+            <img class="section2__foto3 segundaAparicion transformacion" src="./images/1.png" alt="PanesEnBolsas">
+            <img class="section2__foto4 terceraAparicion transformacion" src="./images/5.png" alt="medialuna">
+            <img class="section2__foto5 cuartaAparicion transformacion" src="./images/9.png" alt="PanesEnBolsas">
+            <p class="section2__texto1 primeraAparicion">"El mejor pan que probamos con mis amigas"</p>
+            <p class="section2__texto2 terceraAparicion">"Lo que están las mediaslunas de Panes y Canciones es inenarrable, gente"</p>
+            <p class="section2__texto3 cuartaAparicion">"No prueben nada si tienen voluntad débil. Se los advierto, ¡es una trampa de la que no se vuelve! ¡No lo hagan!"</p>
+        </article>
     </section>
     <!--seccion dedicada a "Talleres y Asesorías"-->
     <section class="section3">
-        <h2 class="section3__titulo primeraAparicion transformacion" >EL SABER Y EL PAN SE COMPARTEN</h2>
-        <Button class="section3__botonTabla primeraAparicion transformacion">
+        <h2 class="section3__titulo primeraAparicion" >EL SABER Y EL PAN SE COMPARTEN</h2>
+        <Button class="section3__botonTabla primeraAparicion">
             <a href="./pages/talleres-y-asesorias.html">Ver Más</a>
         </Button>
 
