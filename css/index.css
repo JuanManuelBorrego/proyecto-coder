@@ -332,6 +332,7 @@ header {
     background-position: center;
     width: 90vw;
     height: 80vh;
+    margin-top: 5vh;
     margin-left: 5vw;
     opacity: 0; }
     .section3 table tr td {
