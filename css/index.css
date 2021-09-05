@@ -120,18 +120,23 @@ header {
   background-size: cover;
   height: 90vh; }
   header div {
+    display: grid;
+    grid-template-areas: "ul ul ul" ". . ." ". h1 ." ". p ." ". img .";
+    grid-template-rows: auto 25vh auto auto;
+    grid-template-columns: 20vw 60vw 20vw;
     height: 90vh;
     background-image: linear-gradient(#fff1e67c, #FFF1E6); }
     header div nav h1 {
+      grid-area: h1;
       font-size: 65px;
       font-family: sans-serif;
       color: #a2a39b; }
-    header div nav #titulo {
-      margin-top: 25vh; }
     header div nav p {
+      grid-area: p;
       font-size: 20px;
       font-family: 'Indie Flower', cursive; }
     header div nav ul {
+      grid-area: ul;
       border-top: 1vh;
       display: flex;
       flex-direction: row;
@@ -141,6 +146,8 @@ header {
       header div nav ul li a {
         text-decoration: none;
         color: black; }
+    header div nav img {
+      grid-area: img; }
 
 /*  seccion destinada a "Sobre Mi"  */
 .section1 {

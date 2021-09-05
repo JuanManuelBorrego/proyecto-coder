@@ -12,22 +12,31 @@ header{
     background-size: cover;
     height: 90vh;
     div {
+        display: grid;
+        grid-template-areas:
+        "ul ul ul"
+        ". . ."
+        ". h1 ."
+        ". p ."
+        ". img .";
+        grid-template-rows: auto 25vh auto auto;
+        grid-template-columns: 20vw 60vw 20vw;
         height: 90vh;
         background-image: $gradiente-inverso;
         nav{
             h1 {
+                grid-area: h1;
                 font-size: $font-syze-h1;
                 font-family: sans-serif;
                 color: rgb(162, 163, 155);
             }
-            #titulo{
-                margin-top: 25vh;
-            }
             p{
+                grid-area: p;
                 font-size: $p-font-syze;
                 font-family: 'Indie Flower', cursive; 
             }
             ul {
+                grid-area: ul;
                 border-top: 1vh;
                 display: flex;
                 flex-direction: row;
@@ -41,7 +50,10 @@ header{
                     }
                 }
             }
-       }
+            img {
+                grid-area: img;
+            }
+        }
     }
 }
 
