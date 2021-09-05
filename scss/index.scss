@@ -12,18 +12,18 @@ header{
     background-size: cover;
     height: 90vh;
     div {
-        display: grid;
-        grid-template-areas:
-        "ul ul ul"
-        ". . ."
-        ". h1 ."
-        ". p ."
-        ". img .";
-        grid-template-rows: auto 25vh auto auto;
-        grid-template-columns: 20vw 60vw 20vw;
         height: 90vh;
         background-image: $gradiente-inverso;
         nav{
+            display: grid;
+            grid-template-areas:
+            ". ul ."
+            ". . ."
+            ". h1 ."
+            ". p ."
+            ". img .";
+            grid-template-rows: auto 25vh auto auto;
+            grid-template-columns: auto 60vw auto;
             h1 {
                 grid-area: h1;
                 font-size: $font-syze-h1;
@@ -47,6 +47,7 @@ header{
                     a{ 
                         text-decoration: none;
                         color: black;
+                        text-transform: uppercase;
                     }
                 }
             }
