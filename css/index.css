@@ -173,8 +173,7 @@ header {
       font-size: 50px;
       color: #a2a39b;
       margin-left: 5vw;
-      align-self: flex-end;
-      opacity: 0; }
+      align-self: flex-end; }
       .section1 article .section1__titulo #boton1 {
         font-size: 1vw;
         font-style: none;
@@ -189,16 +188,14 @@ header {
     width: 25vw;
     height: 50vh;
     padding: 1vh;
-    margin-top: 20px;
-    opacity: 0; }
+    margin-top: 20px; }
   .section1 .section1__foto2 {
     grid-area: section1__foto2;
     align-self: start;
     width: 25vw;
     height: 50vh;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section1 .section1__texto1 {
     grid-area: section1__texto1;
     justify-self: end;
@@ -206,8 +203,7 @@ header {
     width: 15vw;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
-    color: black;
-    opacity: 0; }
+    color: black; }
   .section1 .section1__texto2 {
     grid-area: section1__texto2;
     justify-self: start;
@@ -215,8 +211,7 @@ header {
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
     color: black;
-    margin-bottom: 40vh;
-    opacity: 0; }
+    margin-bottom: 40vh; }
 
 /* seccion destinada a productos*/
 .section2 {
@@ -239,7 +234,6 @@ header {
       font-size: 50px;
       color: #a2a39b;
       position: relative;
-      opacity: 0;
       margin-top: 5vh;
       margin-left: 5vw; }
       .section2 article .section2__titulo #boton {
@@ -256,44 +250,38 @@ header {
     width: auto;
     height: 50vh;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto2 {
     grid-area: section2__foto2;
     width: auto;
     height: 30vh;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto3 {
     grid-area: section2__foto3;
     width: auto;
     height: 30vh;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto4 {
     grid-area: section2__foto4;
     width: auto;
     height: 50vh;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto5 {
     grid-area: section2__foto5;
     width: auto;
     height: 50vh;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__texto1 {
     grid-area: section2__texto1;
     justify-self: center;
     width: 15vw;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
-    color: black;
-    opacity: 0; }
+    color: black; }
   .section2 .section2__texto2 {
     grid-area: section2__texto2;
     align-self: center;
@@ -309,8 +297,7 @@ header {
     width: 15vw;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
-    color: black;
-    opacity: 0; }
+    color: black; }
 
 /* seccion 3 que referencia a "Talleres y Asesorías" */
 .section3 {
@@ -324,15 +311,13 @@ header {
     font-family: sans-serif;
     font-size: 50px;
     color: #9fa385;
-    margin-left: 2vw;
-    opacity: 0; }
+    margin-left: 2vw; }
   .section3 .section3__botonTabla {
     font-size: 1vw;
     font-style: none;
     margin-left: 45vw;
     height: 3vh;
-    width: 8vw;
-    opacity: 0; }
+    width: 8vw; }
     .section3 .section3__botonTabla a {
       color: black; }
   .section3 table {
@@ -342,8 +327,7 @@ header {
     width: 90vw;
     height: 80vh;
     margin-top: 5vh;
-    margin-left: 5vw;
-    opacity: 0; }
+    margin-left: 5vw; }
     .section3 table tr td {
       border: solid 1vh black;
       color: white;
