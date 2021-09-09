@@ -233,9 +233,7 @@ ul {
   list-style: none; }
 
 ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
+  text-decoration: none; }
 
 .posicionMenu {
   color: black; }
@@ -261,11 +259,12 @@ body {
 
 .fondoGradiente {
   background-image: linear-gradient(#FFF1E6, #fff1e67c);
-}
+  height: max-content; }
+
 /*estructura de la página utilizando grids*/
 main {
   color: red;
-  height: 120vh;
+  height: 90vh;
   animation-duration: 300s;
   animation-name: aparecer;
   animation-iteration-count: infinite; }
@@ -279,9 +278,11 @@ h1 {
   align-self: flex-end; }
 
 .main__imagen {
-  align-self: flex-start;
-  padding: 1vh;
-  margin: 4px; }
+  width: auto;
+  height: 50vh;
+  align-self: flex-end;
+  padding: 1vh; 
+}
 
 p {
   justify-self: center;
@@ -295,13 +296,15 @@ p {
   width: 45%; }
 
 .main__boton {
-  color: black;
-  height: 8vh;
-  width: 12vw;
-  margin-left: 40vw;
+  grid-area: main__boton;
+  justify-self: center;
+  height: auto;
+  width: 8vw;
+  font-family: 'Indie Flower', cursive;
 }
 
-.main__boton a{
+.main__boton a {
+  text-decoration: none;
   color: black;
 }
 
@@ -314,3 +317,6 @@ footer nav ul {
   top: 100vh;
   padding: 2px, 1px, 2px, 1px;
   padding: 2px,1px,2px,1px; }
+  footer nav ul img {
+    height: 30px;
+    width: 30px; }

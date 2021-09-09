@@ -107,3 +107,8 @@ footer nav ul {
     top: 100vh;
     padding: 2px,1px,2px,1px;
 }
+
+footer nav ul img {
+    width: 30px;
+    height: 30px;
+}

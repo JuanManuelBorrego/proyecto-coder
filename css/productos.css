@@ -74,10 +74,12 @@ body {
     height: 3vh;
     width: 8vw;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan1 a{
      color: black;
+     text-decoration: none;
  }
 
  .botonPan2 {
@@ -86,10 +88,12 @@ body {
     height: 3vh;
     width: 8vw;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan2 a{
      color: black;
+     text-decoration: none;
  }
 
  .botonPan3 {
@@ -98,10 +102,12 @@ body {
     height: 3vh;
     width: 8vw;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan3 a {
      color: black;
+     text-decoration: none;
  }
 
  .botonPan4 {
@@ -109,10 +115,12 @@ body {
     height: 3vh;
     width: 8vw;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan4 a {
      color: black;
+     text-decoration: none;
  }
 
 /*titulos*/
@@ -251,12 +259,14 @@ footer nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(214, 186, 124);
+    background-color: #fff1e6;
     height: 15vh;
-    top: 100vh;
-    padding: 2px, 1px, 2px, 1px;
     background-image: linear-gradient(#FFF1E6, white);
-    padding: 2px,1px,2px,1px;
+}
+
+footer nav ul img {
+    height: 30px;
+    width: 30px;
 }
 
 

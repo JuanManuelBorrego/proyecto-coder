@@ -1,5 +1,5 @@
-$anchoImg: 4vw;
-$altoImg: 6vh;
+$anchoImg: 30px;
+$altoImg: 30px;
 @import "styles.scss";
 * {
     margin: 0px;
@@ -95,8 +95,10 @@ header{
                 margin-left: 30vw;
                 height: 3vh;
                 width: 8vw;
+                font-family: 'Indie Flower', cursive;
                 a{
                     color: black;
+                    text-decoration: none;
                 }
             }
         }
@@ -178,8 +180,10 @@ header{
                 margin-left: 30vw;
                 height: 3vh;
                 width: 8vw;
+                font-family: 'Indie Flower', cursive;
                 a{
                     color: black;
+                    text-decoration: none;
                 }
             }
         }
@@ -277,8 +281,10 @@ header{
             margin-left: 45vw;
             height: 3vh;
             width: 8vw;
+            font-family: 'Indie Flower', cursive;
             a{
                 color: black;
+                text-decoration: none;
             }
     }
 
@@ -351,8 +357,10 @@ footer {
         margin-left: 75vw;
         height: 3vh;
         width: 8vw;
+        font-family: 'Indie Flower', cursive;
         a{
             color: black;
+            text-decoration: none;
         }
     }
     
