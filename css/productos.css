@@ -66,6 +66,25 @@ body {
     justify-items: start;
 }
 
+@media screen and (max-width: 600px) {
+    .seccionPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenPan1 {
+        margin-left: 100px;
+    }
+
+    .imagenPan2 {
+        margin-left: 100px;
+    }
+
+    .imagenPan3 {
+        margin-left: 100px;
+    }
+}
+
 /*botones*/
 
  .botonPan1 {
@@ -131,7 +150,7 @@ h1 {
     font-size: 65px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan1 {
@@ -141,7 +160,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan2 {
@@ -151,7 +170,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan3 {
@@ -161,7 +180,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan4 {
@@ -171,7 +190,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 /*textos*/
@@ -179,47 +198,51 @@ h1 {
 .textoPan1 {
     grid-area: textoPan1;
     justify-self: center;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 .textoPan2 {
     grid-area: textoPan2;
     justify-self: center;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-right: 5vw;
+    text-align: center;
 }
 
 .textoPan3 {
     grid-area: textoPan3;
     justify-self: center;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 .textoPan4 {
     grid-area: textoPan4;
     align-self: initial;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-right: 5vw;
+    text-align: center;
 }
 
 /*imágenes*/
 
 .imagenPan1 {
     grid-area: imagenPan1;
-    width: 25vw;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     justify-self: center;
     padding: 1vh;
     margin: 4px;
@@ -229,8 +252,8 @@ h1 {
 .imagenPan2 {
     grid-area: imagenPan2;
     justify-self: center;
-    width: 25vw;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }
@@ -238,8 +261,8 @@ h1 {
 .imagenPan3 {
     grid-area: imagenPan3;
     justify-self: center;
-    width: 35vw;
-    height: 50vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
     margin: 4px;
 }
@@ -247,8 +270,8 @@ h1 {
 .imagenPan4 {
     grid-area: imagenPan4;
     justify-self: center;
-    width: 25vw;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }
