@@ -7,70 +7,12 @@
   100% {
     opacity: 1; } }
 
-@keyframes segundaAparicion {
-  1% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  2% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
 
-@keyframes terceraAparicion {
-  0% {
-    opacity: 0; }
-  3% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
 
-@keyframes cuartaAparicion {
-  0% {
-    opacity: 0; }
-  4% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
+.transformacion:hover {
+  transform: scale(1.1);
+  transition: 1s; }
 
-.section1:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section3:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section1:hover .segundaAparicion {
-  animation-duration: 150s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .segundaAparicion {
-  animation-duration: 200s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .terceraAparicion {
-  animation-duration: 200s;
-  animation-name: terceraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .cuartaAparicion {
-  animation-duration: 200s;
-  animation-name: cuartaAparicion;
-  animation-iteration-count: infinite; }
 
 .apariciones {
   opacity: 0;
@@ -82,144 +24,7 @@
   transform: scale(1.1);
   transition: 1s; }
 
-.footer__titulo:hover {
-  transform: scale(1.1);
-  transition: 1s; }
 
-.footer__texto:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__boton:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoFace:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoGmail:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoWhatsapp:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoInstagram:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-@keyframes primeraAparicion {
-  0% {
-    opacity: 0; }
-  1% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes segundaAparicion {
-  1% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  2% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes terceraAparicion {
-  0% {
-    opacity: 0; }
-  3% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes cuartaAparicion {
-  0% {
-    opacity: 0; }
-  4% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-.section1:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section3:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section1:hover .segundaAparicion {
-  animation-duration: 150s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .segundaAparicion {
-  animation-duration: 200s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .terceraAparicion {
-  animation-duration: 200s;
-  animation-name: terceraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .cuartaAparicion {
-  animation-duration: 200s;
-  animation-name: cuartaAparicion;
-  animation-iteration-count: infinite; }
-
-.apariciones {
-  opacity: 0;
-  animation-duration: 300s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.transformacion:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__titulo:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__texto:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__boton:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoFace:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoGmail:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoWhatsapp:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoInstagram:hover {
-  transform: scale(1.1);
-  transition: 1s; }
 
 * {
   margin: 0px;
@@ -255,51 +60,54 @@ body {
   background-image: url(../images/footerDePan2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: top; }
+}
 
 .fondoGradiente {
   background-image: linear-gradient(#FFF1E6, #fff1e67c);
-  height: max-content; }
+  height: auto;
+  box-sizing: inherit;
+}
+
 
 /*estructura de la página utilizando grids*/
 main {
-  color: red;
-  height: 90vh;
-  animation-duration: 300s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite; }
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
 
 /*elementos*/
 h1 {
+  grid-area: h1;
   font-family: sans-serif;
   font-size: 65px;
   color: #9fa385;
   margin-left: 5vw;
-  align-self: flex-end; }
+  text-align: center;
+}
 
 .main__imagen {
-  width: auto;
-  height: 50vh;
+  margin-top: 5vh;
+  height: auto;
   align-self: flex-end;
   padding: 1vh; 
 }
 
 p {
+  grid-area: p;
   justify-self: center;
   align-self: center;
-  width: 45vw;
+  width: 90%;
   font-size: 20px;
   font-family: 'Indie Flower', cursive;
-  color: black; }
-
-.row > * {
-  width: 45%; }
+  color: black; 
+  text-align: center;
+}
 
 .main__boton {
-  grid-area: main__boton;
+  grid-area: button;
   justify-self: center;
-  height: auto;
-  width: 8vw;
   font-family: 'Indie Flower', cursive;
 }
 
