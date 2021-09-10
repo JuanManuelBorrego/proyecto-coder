@@ -4,15 +4,39 @@
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     list-style: none;
+    font-size: 0;
 }
 
-ul li a {
+li {
+    display: inline-block;
+    width: 40%;
+    position: relative;
+    font-size: 14px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    background-color: lemonchiffon;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+ul ul li a {
     text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgb(163, 148, 10);
+    width: 100px;
+    padding: 10px 15px;
+    display: block;
 }
 
 .posicionMenu {
@@ -22,11 +46,12 @@ ul li a {
 .colorNavegador {
     background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
     height: 100px;
+    width: 100%;
 }
 
 a img {
-    width: 4vw;
-    height: 6vh;
+    width: 40px;
+    height: 40px;
     margin-top: 7px;
 }
 
@@ -49,7 +74,7 @@ body {
 /*estructura de la página utilizando grids*/
 
 section {
-    height: 100vh;
+    height: auto;
     display: grid;
     grid-template-areas: 
     "h1 h1"
@@ -64,24 +89,31 @@ section {
     animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 600px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /*elementos*/
 
 h1 {
     grid-area: h1;
     font-family: sans-serif;
-    font-size: 65px;
+    font-size: 60px;
     color: rgb(159, 163, 133);
-    margin-left: 5vw;
+    margin-left: 5px;
     justify-self: center;
-    margin-right: 20vw;
+    margin-right: 20px;
 }
 
 form {
     grid-area: form;
-    margin-left: 10vw;
-    width: 20rem;
-    margin-left: 10vw;
+    margin-left: 5%;
+    width: 90%;
     font-style: italic;
+    font-family: 'Indie Flower', cursive;
 }
 
 #mapa {
@@ -92,8 +124,8 @@ form {
     border: solid 1vh black;
     padding: 1vh;
     margin: 4px;
-    height: 30vh;
-    width: 25vw;
+    height: auto;
+    width: 60%;
 }
 
 /*footer*/
@@ -105,4 +137,9 @@ footer nav ul {
     height: 15vh;
     top: 100vh;
     padding: 2px,1px,2px,1px;
+}
+
+footer nav ul img {
+    width: 30px;
+    height: 30px;
 }

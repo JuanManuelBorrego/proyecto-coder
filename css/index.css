@@ -118,29 +118,48 @@ header {
   background-image: url(../images/panEnHd.jpeg);
   background-position: center;
   background-size: cover;
-  height: 90vh; }
+  height: auto; }
   header div {
-    height: 90vh;
+    height: auto;
     background-image: linear-gradient(#fff1e67c, #FFF1E6); }
-    header div nav h1 {
-      font-size: 65px;
-      font-family: sans-serif;
-      color: #a2a39b; }
-    header div nav #titulo {
-      margin-top: 25vh; }
-    header div nav p {
-      font-size: 20px;
-      font-family: 'Indie Flower', cursive; }
-    header div nav ul {
-      border-top: 1vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      list-style: none; }
-      header div nav ul li a {
+    header div nav {
+      display: grid;
+      grid-template-areas: ". ul ." ". . ." ". h1 ." ". p ." ". img .";
+      grid-template-rows: auto 25vh auto auto;
+      grid-template-columns: auto 60vw auto; }
+      header div nav h1 {
+        grid-area: h1;
+        font-size: 45px;
+        font-family: sans-serif;
+        color: #a2a39b; }
+      header div nav p {
+        grid-area: p;
+        font-size: 18px;
+        font-family: 'Indie Flower', cursive; }
+      header div nav li a {
         text-decoration: none;
-        color: black; }
+        color: black;
+        text-transform: uppercase;
+      }
+        header div nav li a .logoMenu {
+          width: 40px;
+          height: 40px;
+          margin-left: 10px; 
+        }
+    header div img {
+      grid-area: img;
+      width: 50%;
+      height: auto; }
+    
+@media screen and (max-width: 600px) {
+  .colorNavegador {
+    display: flex;
+    flex-direction: column; }
+    .colorNavegador h1 {
+      font-size: 50px;
+      text-align: center; }
+    .colorNavegador img {
+      margin-left: 100px; } }
 
 /*  seccion destinada a "Sobre Mi"  */
 .section1 {
@@ -150,9 +169,9 @@ header {
   .section1 article {
     height: auto;
     display: grid;
-    grid-template-areas: ". ." "section1__titulo ." ". section1__foto1" "section1__texto1 section1__foto1" "section1__foto2 ." "section1__foto2 section1__texto2";
+    grid-template-areas: ". ." "section1__titulo ." ". section1__foto1" "section1__texto1 section1__foto1" "section1__foto2 section1__texto2";
     grid-template-columns: 45vw;
-    grid-template-rows: 10vh auto 10vh auto 10vh auto;
+    grid-template-rows: 10vh auto 10vh auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 2px;
     background-color: #fff1e6c5;
@@ -161,65 +180,70 @@ header {
     .section1 article .section1__titulo {
       grid-area: section1__titulo;
       font-family: sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       color: #a2a39b;
       margin-left: 5vw;
-      align-self: flex-end;
-      opacity: 0; }
+      align-self: flex-end; }
       .section1 article .section1__titulo #boton1 {
-        font-size: 1vw;
+        font-size: 16px;
         font-style: none;
         margin-left: 30vw;
-        height: 3vh;
-        width: 8vw; }
+        height: auto;
+        width: 30%;
+        font-family: 'Indie Flower', cursive; }
         .section1 article .section1__titulo #boton1 a {
-          color: black; }
+          color: black;
+          text-decoration: none; }
+  @media screen and (max-width: 600px) {
+    .section1 .section1 {
+      display: flex;
+      flex-direction: column; }
+      .section1 .section1 h2 {
+        text-align: center; } }
   .section1 .section1__foto1 {
     grid-area: section1__foto1;
     align-self: center;
-    width: 25vw;
-    height: 50vh;
+    width: 30%;
+    height: auto;
     padding: 1vh;
-    margin-top: 20px;
-    opacity: 0; }
+    margin-top: 20px; }
   .section1 .section1__foto2 {
     grid-area: section1__foto2;
     align-self: start;
-    width: 25vw;
-    height: 50vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section1 .section1__texto1 {
     grid-area: section1__texto1;
     justify-self: end;
     align-self: flex-start;
-    width: 15vw;
-    font-size: 20px;
+    width: 50%;
+    font-size: larger;
     font-family: 'Indie Flower', cursive;
-    color: black;
-    opacity: 0; }
+    color: black; }
   .section1 .section1__texto2 {
     grid-area: section1__texto2;
     justify-self: start;
-    width: 15vw;
-    font-size: 20px;
+    width: 50%;
+    font-size: larger;
     font-family: 'Indie Flower', cursive;
     color: black;
-    margin-bottom: 40vh;
-    opacity: 0; }
+    margin-bottom: 40vh; }
 
 /* seccion destinada a productos*/
 .section2 {
   background-image: url(../images/panes.png);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  height: auto; }
   .section2 article {
     height: auto;
     display: grid;
-    grid-template-areas: "section2__titulo section2__titulo . section2__foto1 ." "section2__titulo section2__titulo .  section2__foto1 ." ". section2__foto2 section2__texto1 section2__foto1 ." ". section2__foto2 section2__foto3 section2__foto1 ." ". section2__foto4 section2__foto3 section2__texto2 ." ". section2__foto4 section2__texto3 section2__foto5 ." ".section2__foto4 section2__texto3 section2__foto5 .";
-    grid-template-columns: 10% 25% 25% 20% auto;
-    grid-template-rows: 200px 100px 15% 15% 15% auto;
+    align-items: baseline;
+    grid-template-areas: "section2__titulo section2__titulo . section2__foto1 ." "section2__titulo section2__titulo .  section2__foto1 ." ". section2__foto2 section2__texto1 section2__foto1 ." ". section2__foto2 section2__foto3 section2__foto1 ." ". section2__foto4 section2__texto2 section2__texto2 ." ". section2__foto4 section2__texto3 section2__foto5 ." ".section2__foto4 section2__texto3 section2__foto5 ." ". . . . .";
+    grid-template-columns: 10% 25% 25% 25% 10%;
+    grid-template-rows: 200px 100px 15% 15% 15% auto 200px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     background-color: #fff1e6c5; }
@@ -227,114 +251,103 @@ header {
       grid-area: section2__titulo;
       width: 50vw;
       font-family: sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       color: #a2a39b;
       position: relative;
-      opacity: 0;
       margin-top: 5vh;
       margin-left: 5vw; }
       .section2 article .section2__titulo #boton {
-        font-size: 1vw;
+        font-size: 16px;
         font-style: none;
         margin-left: 30vw;
-        height: 3vh;
-        width: 8vw; }
+        height: auto;
+        width: 30%;
+        font-family: 'Indie Flower', cursive;
+      }
         .section2 article .section2__titulo #boton a {
-          color: black; }
+          color: black;
+          text-decoration: none; }
   .section2 .section2__foto1 {
     grid-area: section2__foto1;
     align-self: center;
-    width: auto;
-    height: 50vh;
+    width: 60%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto2 {
     grid-area: section2__foto2;
-    width: auto;
-    height: 30vh;
+    width: 60%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto3 {
     grid-area: section2__foto3;
     width: auto;
-    height: 30vh;
+    height: 150px;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto4 {
     grid-area: section2__foto4;
-    width: auto;
-    height: 50vh;
+    width: 60%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__foto5 {
     grid-area: section2__foto5;
-    width: auto;
-    height: 50vh;
+    width: 40%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
-    opacity: 0; }
+    margin: 4px; }
   .section2 .section2__texto1 {
     grid-area: section2__texto1;
-    justify-self: center;
-    width: 15vw;
+    text-align: center;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
-    color: black;
-    opacity: 0; }
+    color: black; }
   .section2 .section2__texto2 {
     grid-area: section2__texto2;
-    align-self: center;
+    text-align: center;
     justify-content: center;
-    width: 15vw;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
     color: black; }
   .section2 .section2__texto3 {
     grid-area: section2__texto3;
-    align-self: center;
+    text-align: center;
     justify-self: center;
-    width: 15vw;
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
-    color: black;
-    opacity: 0; }
+    color: black; }
 
 /* seccion 3 que referencia a "Talleres y Asesorías" */
 .section3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: auto;
-  background-color: #fff1e6c5; }
-  .section3 .section3__titulo {
-    width: 50vw;
+  background-color: #fff1e6c5;
+  height: auto; }
+  .section3 h2 {
+    width: 80%;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #9fa385;
-    margin-left: 2vw;
-    opacity: 0; }
+    margin-top: 100px; }
   .section3 .section3__botonTabla {
-    font-size: 1vw;
+    font-size: 16px;
     font-style: none;
     margin-left: 45vw;
-    height: 3vh;
-    width: 8vw;
-    opacity: 0; }
+    height: auto;
+    width: 30%;
+    font-family: 'Indie Flower', cursive; }
     .section3 .section3__botonTabla a {
-      color: black; }
+      color: black;
+      text-decoration: none; }
   .section3 table {
     background-image: url(../images/panConHumo.jpeg);
     background-size: cover;
     background-position: center;
-    width: 90vw;
-    height: 80vh;
     margin-top: 5vh;
-    margin-left: 5vw;
-    opacity: 0; }
+    margin-left: 5vw; }
     .section3 table tr td {
       border: solid 1vh black;
       color: white;
@@ -365,7 +378,7 @@ footer {
   footer .footer__titulo {
     color: #9fa385;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center; }
   footer .footer__texto {
     color: black;
@@ -375,14 +388,15 @@ footer {
     margin-left: 10vw;
     text-align: center; }
   footer .footer__boton {
-    font-size: 1vw;
-    font-style: none;
-    margin-bottom: 10vh;
-    margin-left: 75vw;
-    height: 3vh;
-    width: 8vw; }
+    font-size: 16px;
+        font-style: none;
+        margin-left: 65vw;
+        height: auto;
+        width: 30%;
+        font-family: 'Indie Flower', cursive; }
     footer .footer__boton a {
-      color: black; }
+      color: black;
+      text-decoration: none; }
   footer nav ul {
     display: flex;
     flex-direction: row;
@@ -392,5 +406,5 @@ footer {
     padding: 2px, 1px, 2px, 1px;
     padding: 2px,1px,2px,1px; }
     footer nav ul a img {
-      width: 4vw;
-      height: 6vh; }
+      width: 30px;
+      height: 30px; }

@@ -1,5 +1,5 @@
-$anchoImg: 4vw;
-$altoImg: 6vh;
+$anchoImg: 30px;
+$altoImg: 30px;
 @import "styles.scss";
 * {
     margin: 0px;
@@ -10,42 +10,67 @@ header{
     background-image: url(../images/panEnHd.jpeg);
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: auto;
     div {
-        height: 90vh;
+        height: auto;
         background-image: $gradiente-inverso;
         nav{
+            display: grid;
+            grid-template-areas:
+            ". ul ."
+            ". . ."
+            ". h1 ."
+            ". p ."
+            ". img .";
+            grid-template-rows: auto 25vh auto auto;
+            grid-template-columns: auto 60vw auto;
             h1 {
-                font-size: $font-syze-h1;
+                grid-area: h1;
+                font-size: 60px;
                 font-family: sans-serif;
                 color: rgb(162, 163, 155);
             }
-            #titulo{
-                margin-top: 25vh;
-            }
             p{
+                grid-area: p;
                 font-size: $p-font-syze;
                 font-family: 'Indie Flower', cursive; 
             }
-            ul {
-                border-top: 1vh;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                list-style: none; 
-                li{ 
-                    a{ 
-                        text-decoration: none;
-                        color: black;
+            
+            li{ 
+                a{ 
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    .logoMenu {
+                        width: 40px;
+                        height: 40px;
+                        margin-left: 10px;
                     }
                 }
             }
-       }
+        }
+        img {
+            grid-area: img;
+            width: 50%;
+            height: auto;
+        }
     }
 }
 
 
+@media screen and (max-width: 600px) {
+    .colorNavegador {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+        img {
+            margin-left: 100px;
+        }
+    }
+}
 /*  seccion destinada a "Sobre Mi"  */
 
 .section1 {
@@ -60,10 +85,9 @@ header{
         "section1__titulo ."
         ". section1__foto1"
         "section1__texto1 section1__foto1"
-        "section1__foto2 ."
         "section1__foto2 section1__texto2";
         grid-template-columns: 45vw;
-        grid-template-rows: 10vh auto 10vh auto 10vh auto;
+        grid-template-rows: 10vh auto 10vh auto auto;
         grid-column-gap: 20px;
         grid-row-gap: 2px;;
         background-color: #fff1e6c5;
@@ -76,60 +100,66 @@ header{
             color: rgb(162, 163, 155);
             margin-left: 5vw;
             align-self: flex-end;
-            opacity: 0;
             #boton1 {
                 font-size: 1vw;
                 font-style: none;
                 margin-left: 30vw;
                 height: 3vh;
                 width: 8vw;
+                font-family: 'Indie Flower', cursive;
                 a{
                     color: black;
+                    text-decoration: none;
                 }
             }
         }
     }
 
+@media screen and (max-width: 600px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+        }
+    }
+}
     .section1__foto1 {
         grid-area: section1__foto1;
         align-self: center;
-        width: 25vw;
-        height: 50vh;
+        width: 30%;
+        height: auto;
         padding: 1vh;
         margin-top: 20px;
-        opacity: 0;
     }
 
     .section1__foto2 {
         grid-area: section1__foto2;
         align-self: start;
-        width: 25vw;
-        height: 50vh;
+        width: 50%;
+        height: auto;
         padding: 1vh;
         margin: 4px;
-        opacity: 0;
     }
 
     .section1__texto1 {
         grid-area: section1__texto1;
         justify-self: end;
         align-self: flex-start;
-        width: 15vw;
-        font-size: 20px;
+        width: 50%;
+        font-size: larger;
         font-family: 'Indie Flower', cursive; 
         color: black;
-        opacity: 0;
     }
 
     .section1__texto2 {
         grid-area: section1__texto2;
         justify-self: start;
-        width: 15vw;
-        font-size: 20px;
+        width: 50%;
+        font-size: larger;
         font-family: 'Indie Flower', cursive; 
         color: black;
         margin-bottom: 40vh;
-        opacity: 0;
     }
 }
 
@@ -139,19 +169,22 @@ header{
     background-image: url(../images/panes.png);
     background-repeat: no-repeat;
     background-position: center;
+    height: auto;
     article {
         height: auto;
         display: grid;
+        align-items: baseline;
         grid-template-areas:
         "section2__titulo section2__titulo . section2__foto1 ."
         "section2__titulo section2__titulo .  section2__foto1 ."
         ". section2__foto2 section2__texto1 section2__foto1 ."
         ". section2__foto2 section2__foto3 section2__foto1 ."
-        ". section2__foto4 section2__foto3 section2__texto2 ."
+        ". section2__foto4 section2__texto2 section2__texto2 ."
         ". section2__foto4 section2__texto3 section2__foto5 ."
-        ".section2__foto4 section2__texto3 section2__foto5 .";
-        grid-template-columns: 10% 25% 25% 20% auto ;
-        grid-template-rows: 200px 100px 15% 15% 15% auto ;
+        ".section2__foto4 section2__texto3 section2__foto5 ."
+        ". . . . .";
+        grid-template-columns: 10% 25% 25% 25% 10% ;
+        grid-template-rows: 200px 100px 15% 15% 15% auto 200px ;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         background-color: #fff1e6c5;
@@ -162,7 +195,6 @@ header{
             font-size: 50px;
             color: rgb(162, 163, 155);
             position: relative;
-            opacity: 0;
             margin-top: 5vh;
             margin-left: 5vw;
             #boton {
@@ -171,73 +203,68 @@ header{
                 margin-left: 30vw;
                 height: 3vh;
                 width: 8vw;
+                font-family: 'Indie Flower', cursive;
                 a{
                     color: black;
+                    text-decoration: none;
                 }
             }
         }
     }
+
     .section2__foto1 {
         grid-area: section2__foto1;
         align-self: center;
-        width: auto;
-        height: 50vh;
+        width: 60%;
+        height: auto;
         padding: 1vh;
         margin: 4px;
-        opacity: 0;
     }
 
     .section2__foto2 {
         grid-area: section2__foto2;
-        width: auto;
-        height: 30vh;
+        width: 60%;
+        height: auto;
         padding: 1vh;
         margin: 4px;
-        opacity: 0;
     }
 
     .section2__foto3 {
         grid-area: section2__foto3;
         width: auto;
-        height: 30vh;
+        height: 150px;
         padding: 1vh;
         margin: 4px;
-        opacity: 0;
     }
 
     .section2__foto4 {
         grid-area: section2__foto4;
-        width: auto;
-        height: 50vh;
+        width: 60%;
+        height: auto;
         padding: 1vh;
         margin: 4px;
-        opacity: 0;
     }
 
     .section2__foto5 {
         grid-area: section2__foto5;
-        width: auto;
-        height: 50vh;
+        width: 40%;
+        height: auto;
         padding: 1vh;
         margin: 4px;
-        opacity: 0;
     }
 
     .section2__texto1 {
         grid-area: section2__texto1;
-        justify-self: center;
-        width: 15vw;
+        text-align: center;
         font-size: 20px;
         font-family: 'Indie Flower', cursive; 
         color: black; 
-        opacity: 0;
     }
 
     .section2__texto2 {
         grid-area: section2__texto2;
-        align-self: center;
+        text-align: center;
         justify-content: center;
-        width: 15vw;
         font-size: 20px;
         font-family: 'Indie Flower', cursive; 
         color: black; 
@@ -245,32 +272,30 @@ header{
 
     .section2__texto3 {
         grid-area: section2__texto3;
-        align-self: center;
+        text-align: center;
         justify-self: center;
-        width: 15vw;
         font-size: 20px;
         font-family: 'Indie Flower', cursive; 
         color: black; 
-        opacity: 0;
     }
 }
 
 /* seccion 3 que referencia a "Talleres y Asesorías" */
 
 
+
 .section3 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: auto;
     background-color: #fff1e6c5;
+    height: auto;
     .section3__titulo {
-        width: 50vw;
+        width: 80%;
         font-family: sans-serif;
         font-size: 50px;
         color: rgb(159, 163, 133);
-        margin-left: 2vw;
-        opacity: 0;
+        margin-top: 100px;
     }
     .section3__botonTabla {
             font-size: 1vw;
@@ -278,21 +303,19 @@ header{
             margin-left: 45vw;
             height: 3vh;
             width: 8vw;
+            font-family: 'Indie Flower', cursive;
             a{
                 color: black;
+                text-decoration: none;
             }
-            opacity: 0;
     }
 
     table {
         background-image: url(../images/panConHumo.jpeg);
         background-size: cover;
         background-position: center;
-        width: 90vw;
-        height: 80vh;
         margin-top: 5vh;
         margin-left: 5vw;
-        opacity: 0;
         tr {
             td{
                 border: solid 1vh black;
@@ -354,8 +377,10 @@ footer {
         margin-left: 75vw;
         height: 3vh;
         width: 8vw;
+        font-family: 'Indie Flower', cursive;
         a{
             color: black;
+            text-decoration: none;
         }
     }
     
@@ -375,5 +400,5 @@ footer {
                 }
             }
         }
-    }  
+    }
 }

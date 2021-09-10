@@ -13,6 +13,7 @@ ul {
 
 ul li a {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .posicionMenu {
@@ -25,8 +26,8 @@ ul li a {
 }
 
 a img {
-    width: 4vw;
-    height: 6vh;
+    width: 40px;
+    height: 40px;
     margin-top: 7px;
 }
 
@@ -65,53 +66,80 @@ body {
     justify-items: start;
 }
 
+@media screen and (max-width: 600px) {
+    .seccionPrincipal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenPan1 {
+        margin-left: 100px;
+    }
+
+    .imagenPan2 {
+        margin-left: 100px;
+    }
+
+    .imagenPan3 {
+        margin-left: 100px;
+    }
+}
+
 /*botones*/
 
  .botonPan1 {
     grid-area: botonPan1;
     color: black;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan1 a{
      color: black;
+     text-decoration: none;
  }
 
  .botonPan2 {
     grid-area: botonPan2;
     color: black;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan2 a{
      color: black;
+     text-decoration: none;
  }
 
  .botonPan3 {
     grid-area: botonPan3;
     color: black;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan3 a {
      color: black;
+     text-decoration: none;
  }
 
  .botonPan4 {
     grid-area: botonPan4;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
+    font-family: 'Indie Flower', cursive;
  }
 
  .botonPan4 a {
      color: black;
+     text-decoration: none;
  }
 
 /*titulos*/
@@ -122,7 +150,7 @@ h1 {
     font-size: 65px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan1 {
@@ -132,7 +160,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan2 {
@@ -142,7 +170,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan3 {
@@ -152,7 +180,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 .tituloPan4 {
@@ -162,7 +190,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 /*textos*/
@@ -170,47 +198,51 @@ h1 {
 .textoPan1 {
     grid-area: textoPan1;
     justify-self: center;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 .textoPan2 {
     grid-area: textoPan2;
     justify-self: center;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-right: 5vw;
+    text-align: center;
 }
 
 .textoPan3 {
     grid-area: textoPan3;
     justify-self: center;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 .textoPan4 {
     grid-area: textoPan4;
     align-self: initial;
-    width: 40vw;
+    width: 90%;
     font-size: 20px;
     font-family: 'Indie Flower', cursive; 
     color: black;
     margin-right: 5vw;
+    text-align: center;
 }
 
 /*imágenes*/
 
 .imagenPan1 {
     grid-area: imagenPan1;
-    width: 25vw;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     justify-self: center;
     padding: 1vh;
     margin: 4px;
@@ -220,8 +252,8 @@ h1 {
 .imagenPan2 {
     grid-area: imagenPan2;
     justify-self: center;
-    width: 25vw;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }
@@ -229,8 +261,8 @@ h1 {
 .imagenPan3 {
     grid-area: imagenPan3;
     justify-self: center;
-    width: 35vw;
-    height: 50vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
     margin: 4px;
 }
@@ -238,8 +270,8 @@ h1 {
 .imagenPan4 {
     grid-area: imagenPan4;
     justify-self: center;
-    width: 25vw;
-    height: 30vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
     margin: 4px 4px 4px 5vw;
 }
@@ -250,12 +282,14 @@ footer nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(214, 186, 124);
+    background-color: #fff1e6;
     height: 15vh;
-    top: 100vh;
-    padding: 2px, 1px, 2px, 1px;
     background-image: linear-gradient(#FFF1E6, white);
-    padding: 2px,1px,2px,1px;
+}
+
+footer nav ul img {
+    height: 30px;
+    width: 30px;
 }
 
 

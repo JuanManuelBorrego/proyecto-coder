@@ -172,7 +172,6 @@ h1 {
 .main__imagen {
   width: 45%;
   height: 50vh;
-  border: solid 1vh black;
   align-self: flex-end;
   padding: 1vh;
   margin: 4px; }
@@ -204,4 +203,9 @@ footer nav ul {
   height: 15vh;
   top: 100vh;
   padding: 2px, 1px, 2px, 1px;
-  padding: 2px,1px,2px,1px; }
+  padding: 2px,1px,2px,1px;
+  img{
+    height: 30px;
+    width: 30px;
+    };
+  }

@@ -8,6 +8,9 @@
     <meta name="decription" content="Bienvenidos al sitio de Panes y Canciones, en donde entendemos que el pan tiene como eje fundamental una filosofía de la vida, una resignificación constante, en donde el compartir la mesa y la musicalización que supone una vida en torno a la masa y su evolución es un acto de rebeldía amorosa.">
     <title> Panes y Canciones, o cómo se vivencia la panadería / Sobre Mi.</title>
     <link rel="stylesheet" type="text/css" href="../css/sobreMi.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
@@ -19,31 +22,32 @@
 <body>
     <div class="fondoGradiente">
         <header>
-            <nav class="colorNavegador"> 
-                <ul>
-                    <li><a href="../index.html"><img src="../images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a></li>
-                    <li><a href="./Productos.html" class="posicionMenu">Productos</a></li>
-                    <li><a href="./talleres-y-asesorias.html" class="posicionMenu">Talleres y Asesorías</a></li>
-                    <li><a href="./sobre-mi.html" class="posicionMenu">Sobre Mí</a></li>
-                    <li><a href="./hablemos.html" class="posicionMenu">Hablemos</a></li>
-                </ul>    
-            </nav>
+            <li class="nav-item dropdown colorNavegador">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="../images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../index.html">Home</a>
+                    <a class="dropdown-item" href="./Productos.html">Productos</a>
+                    <a class="dropdown-item" href="./talleres-y-asesorias.html">Talleres y Asesorías</a>
+                    <a class="dropdown-item" href="./sobre-mi.html">Sobre Mi</a>
+                    <a class="dropdown-item" href="./hablemos.html">Hablemos</a>
+                  </div>
+              </li>
         </header>
-        <main class="apariciones">
-            <h1 class="transformacion">La masa como filosofía de vida</h1>
+        <main class="apariciones col-md-10 offset-md-1">
+            <h1>La masa como filosofía de vida</h1>
             <div class="container">
-                <div class="row">
-                    <article class="col-md-4">
-                        <p class="transformacion">Como los hidratos de carbono son absolutamente fundamentales en nuestra dieta, por mucho que hoy en día estén demonizados, tenemos que incluirlos en todas nuestras comidas principales. Son tan importantes que hasta un 50-60% del total de la energía aportada en la dieta debe provenir de los hidratos de carbono. Y sí, en las cenas también debemos incluirlos. Eso sí, en la cantidad necesaria, claro está. 
+                <div>
+                    <article>
+                        <p>Como los hidratos de carbono son absolutamente fundamentales en nuestra dieta, por mucho que hoy en día estén demonizados, tenemos que incluirlos en todas nuestras comidas principales. Son tan importantes que hasta un 50-60% del total de la energía aportada en la dieta debe provenir de los hidratos de carbono. Y sí, en las cenas también debemos incluirlos. Eso sí, en la cantidad necesaria, claro está. 
                             <br> Como los hidratos de carbono son absolutamente fundamentales en nuestra dieta, por mucho que hoy en día estén demonizados, tenemos que incluirlos en todas nuestras comidas principales. Son tan importantes que hasta un 50-60% del total de la energía aportada en la dieta debe provenir de los hidratos de carbono. Y sí, en las cenas también debemos incluirlos. Eso sí, en la cantidad necesaria, claro está 
                             <br> Como los hidratos de carbono son absolutamente fundamentales en nuestra dieta, por mucho que hoy en día estén demonizados, tenemos que incluirlos en todas nuestras comidas principales. Son tan importantes que hasta un 50-60% del total de la energía aportada en la dieta debe provenir de los hidratos de carbono. Y sí, en las cenas también debemos incluirlos. Eso sí, en la cantidad necesaria, claro está.
                         </p>
-                        <button class="main__boton transformacion">
+                        <button class="main__boton col-2 offset-8">
                             <a href="https://open.spotify.com/artist/7Knn0jD4uLt7M3zY3jKZUc?si=0BuT4pnHSQeHBNz4Ur6k1A&dl_branch=1">PlayList on Spotify</a>
                         </button>
                     </article>
-                    <article class="col-md-4 offset-md-4">
-                    <img src="../images/22.png" class="main__imagen transformacion"  alt="en bici">
+                    <article>
+                    <img src="../images/22.png" class="main__imagen transformacion col-6 offset-3"  alt="en bici">
                     </article>
                 </div>
             </div>
@@ -52,16 +56,16 @@
             <nav>
                 <ul>
                     <a href="https://www.facebook.com/">
-                        <img src="../images/imagenFacebook2.png" class="logoFace" alt="Logo de Face">
+                        <img src="../images/facebook.png" class="logoFace" alt="Logo de Face">
                     </a>
                     <a href="https://mail.google.com/mail/u/0/"> 
-                        <img src="../images/gmail-logo-2.png" class="logoGmail" alt="mail">
+                        <img src="../images/gmail.png" class="logoGmail" alt="mail">
                     </a>
                     <a href="https://web.whatsapp.com/">
-                        <img src="../images/whatsapp-logo2-png-.png" class="logoWhatsapp" alt="Logo de Whatsapp">
+                        <img src="../images/whatsapp.png" class="logoWhatsapp" alt="Logo de Whatsapp">
                     </a>
                     <a href="https://www.instagram.com/">
-                        <img src="../images/Instagram-logo.png" class="logoInstagram" alt="Logo de Instagram">
+                        <img src="../images/instagram.png" class="logoInstagram" alt="Logo de Instagram">
                     </a>
                 </ul>
             </nav>

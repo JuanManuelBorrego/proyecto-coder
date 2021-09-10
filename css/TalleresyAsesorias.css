@@ -13,6 +13,7 @@ ul {
 
 ul li a {
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .posicionMenu {
@@ -22,11 +23,12 @@ ul li a {
 .colorNavegador {
     background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
     height: 100px;
+    width: 100%;
 }
 
 a img {
-    width: 4vw;
-    height: 6vh;
+    width: 40px;
+    height: 40px;
     margin-top: 7px;
 }
 
@@ -45,16 +47,15 @@ main {
     height: auto;
     display: grid;
     grid-template-areas: 
-    "h1 ."
-    ". subtitulo1"
+    "h1 h1"
+    "subtitulo1 subtitulo1"
     "imagenPan1 texto1"
-    ". subtitulo2"
+    "subtitulo2 subtitulo2"
     "imagenPan2 texto2"
-    ". ."
-    "subtitulo3 ."
+    "subtitulo3 subtitulo3"
     "texto3 imagenPan3";
     grid-template-columns: auto;
-    grid-template-rows: auto 5vh auto 5vh auto 40px 5vh auto;
+    grid-template-rows: auto 15vh auto 15vh auto 15vh auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     align-content: space-around ;
@@ -64,30 +65,46 @@ main {
     animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenPan1 {
+        margin-left: 100px;
+    }
+
+    .imagenPan2 {
+        margin-left: 100px;
+    }
+
+    .imagenPan3 {
+        margin-left: 100px;
+    }
+}
+
 /*imágenes*/
 
 .imagenPan1 {
     grid-area: imagenPan1;
-    width: 20vw;
-    height: 35vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
 }
 
 .imagenPan2 {
     grid-area: imagenPan2;
-    width: 20vw;
-    height: 35vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
 }
 
 .imagenPan3 {
     grid-area: imagenPan3;
-    width: 20vw;
-    height: 35vh;
+    width: 50%;
+    height: auto;
     padding: 1vh;
-    margin: 4px;
 }
 
 /*títulos*/
@@ -97,7 +114,6 @@ h1 {
     font-size: 65px;
     font-family: sans-serif;
     color: rgb(206, 159, 57);
-    margin-left: 5vw;
     text-align: center;
 }
 
@@ -108,8 +124,7 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
-    margin-right: 15vw;
+    text-align: center;
 }
 
 .subtitulo2 {
@@ -118,8 +133,8 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
     margin-right: 5vw;
+    text-align: center;
 }
 
 .subtitulo3 {
@@ -128,33 +143,36 @@ h1 {
     font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
-    align-self: flex-end;
+    text-align: center;
 }
 
 /*textos*/
 
 .texto1 {
     grid-area: texto1;
-    width: 40vw;
-    font-size: 20px;
+    width: 90%;
+    font-size: larger;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 .texto2 {
     grid-area: texto2;
-    width: 40vw;
-    font-size: 20px;
+    width: 90%;
+    font-size: larger;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 .texto3 {
     grid-area: texto3;
-    width: 40vw;
-    font-size: 20px;
+    width: 90%;
+    font-size: larger;
     font-family: 'Indie Flower', cursive; 
     color: black;
+    text-align: center;
 }
 
 /*footer*/
@@ -163,10 +181,13 @@ footer nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(214, 186, 124);
     height: 15vh;
     top: 100vh;
     padding: 2px, 1px, 2px, 1px;
-    background-image: linear-gradient(#FFF1E6, white);
     padding: 2px,1px,2px,1px;
+}
+
+footer nav ul img {
+    height: 30px;
+    width: 30px;
 }
