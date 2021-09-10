@@ -136,23 +136,21 @@ header {
         grid-area: p;
         font-size: 18px;
         font-family: 'Indie Flower', cursive; }
-      header div nav ul {
-        grid-area: ul;
-        border-top: 1vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        list-style: none; }
-        header div nav ul li a {
-          text-decoration: none;
-          color: black;
-          text-transform: uppercase; }
-      header div nav img {
-        grid-area: img;
-        width: 70%;
-        height: auto; }
-
+      header div nav li a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+      }
+        header div nav li a .logoMenu {
+          width: 40px;
+          height: 40px;
+          margin-left: 10px; 
+        }
+    header div img {
+      grid-area: img;
+      width: 50%;
+      height: auto; }
+    
 @media screen and (max-width: 600px) {
   .colorNavegador {
     display: flex;
@@ -182,16 +180,16 @@ header {
     .section1 article .section1__titulo {
       grid-area: section1__titulo;
       font-family: sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       color: #a2a39b;
       margin-left: 5vw;
       align-self: flex-end; }
       .section1 article .section1__titulo #boton1 {
-        font-size: 1vw;
+        font-size: 16px;
         font-style: none;
         margin-left: 30vw;
-        height: 3vh;
-        width: 8vw;
+        height: auto;
+        width: 30%;
         font-family: 'Indie Flower', cursive; }
         .section1 article .section1__titulo #boton1 a {
           color: black;
@@ -253,18 +251,19 @@ header {
       grid-area: section2__titulo;
       width: 50vw;
       font-family: sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       color: #a2a39b;
       position: relative;
       margin-top: 5vh;
       margin-left: 5vw; }
       .section2 article .section2__titulo #boton {
-        font-size: 1vw;
+        font-size: 16px;
         font-style: none;
         margin-left: 30vw;
-        height: 3vh;
-        width: 8vw;
-        font-family: 'Indie Flower', cursive; }
+        height: auto;
+        width: 30%;
+        font-family: 'Indie Flower', cursive;
+      }
         .section2 article .section2__titulo #boton a {
           color: black;
           text-decoration: none; }
@@ -327,18 +326,18 @@ header {
   justify-content: space-around;
   background-color: #fff1e6c5;
   height: auto; }
-  .section3 .section3__titulo {
-    width: 90%;
+  .section3 h2 {
+    width: 80%;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #9fa385;
     margin-top: 100px; }
   .section3 .section3__botonTabla {
-    font-size: 1vw;
+    font-size: 16px;
     font-style: none;
     margin-left: 45vw;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     font-family: 'Indie Flower', cursive; }
     .section3 .section3__botonTabla a {
       color: black;
@@ -379,7 +378,7 @@ footer {
   footer .footer__titulo {
     color: #9fa385;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center; }
   footer .footer__texto {
     color: black;
@@ -389,13 +388,12 @@ footer {
     margin-left: 10vw;
     text-align: center; }
   footer .footer__boton {
-    font-size: 1vw;
-    font-style: none;
-    margin-bottom: 10vh;
-    margin-left: 75vw;
-    height: 3vh;
-    width: 8vw;
-    font-family: 'Indie Flower', cursive; }
+    font-size: 16px;
+        font-style: none;
+        margin-left: 65vw;
+        height: auto;
+        width: 30%;
+        font-family: 'Indie Flower', cursive; }
     footer .footer__boton a {
       color: black;
       text-decoration: none; }

@@ -26,8 +26,8 @@ ul li a {
 }
 
 a img {
-    width: 4vw;
-    height: 6vh;
+    width: 40px;
+    height: 40px;
     margin-top: 7px;
 }
 
@@ -90,8 +90,8 @@ body {
  .botonPan1 {
     grid-area: botonPan1;
     color: black;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -104,8 +104,8 @@ body {
  .botonPan2 {
     grid-area: botonPan2;
     color: black;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -118,8 +118,8 @@ body {
  .botonPan3 {
     grid-area: botonPan3;
     color: black;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -131,8 +131,8 @@ body {
 
  .botonPan4 {
     grid-area: botonPan4;
-    height: 3vh;
-    width: 8vw;
+    height: auto;
+    width: 30%;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }

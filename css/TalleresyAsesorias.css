@@ -23,12 +23,12 @@ ul li a {
 .colorNavegador {
     background-image: linear-gradient(#f8d1b3, #FFF1E6) ;
     height: 100px;
-    width: max-content;
+    width: 100%;
 }
 
 a img {
-    width: 4vw;
-    height: 6vh;
+    width: 40px;
+    height: 40px;
     margin-top: 7px;
 }
 

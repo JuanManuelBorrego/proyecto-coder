@@ -7,12 +7,70 @@
   100% {
     opacity: 1; } }
 
+@keyframes segundaAparicion {
+  1% {
+    opacity: 0; }
+  2% {
+    opacity: 0; }
+  2% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
+@keyframes terceraAparicion {
+  0% {
+    opacity: 0; }
+  3% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
-.transformacion:hover {
-  transform: scale(1.1);
-  transition: 1s; }
+@keyframes cuartaAparicion {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
+.section1:hover .primeraAparicion {
+  animation-duration: 150s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .primeraAparicion {
+  animation-duration: 150s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.section3:hover .primeraAparicion {
+  animation-duration: 150s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.section1:hover .segundaAparicion {
+  animation-duration: 150s;
+  animation-name: segundaAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .segundaAparicion {
+  animation-duration: 200s;
+  animation-name: segundaAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .terceraAparicion {
+  animation-duration: 200s;
+  animation-name: terceraAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .cuartaAparicion {
+  animation-duration: 200s;
+  animation-name: cuartaAparicion;
+  animation-iteration-count: infinite; }
 
 .apariciones {
   opacity: 0;
@@ -24,7 +82,144 @@
   transform: scale(1.1);
   transition: 1s; }
 
+.footer__titulo:hover {
+  transform: scale(1.1);
+  transition: 1s; }
 
+.footer__texto:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.footer__boton:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoFace:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoGmail:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoWhatsapp:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoInstagram:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+@keyframes primeraAparicion {
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes segundaAparicion {
+  1% {
+    opacity: 0; }
+  2% {
+    opacity: 0; }
+  2% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes terceraAparicion {
+  0% {
+    opacity: 0; }
+  3% {
+    opacity: 0; }
+  4% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+@keyframes cuartaAparicion {
+  0% {
+    opacity: 0; }
+  4% {
+    opacity: 0; }
+  5% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+.section1:hover .primeraAparicion {
+  animation-duration: 150s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .primeraAparicion {
+  animation-duration: 150s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.section3:hover .primeraAparicion {
+  animation-duration: 150s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.section1:hover .segundaAparicion {
+  animation-duration: 150s;
+  animation-name: segundaAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .segundaAparicion {
+  animation-duration: 200s;
+  animation-name: segundaAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .terceraAparicion {
+  animation-duration: 200s;
+  animation-name: terceraAparicion;
+  animation-iteration-count: infinite; }
+
+.section2:hover .cuartaAparicion {
+  animation-duration: 200s;
+  animation-name: cuartaAparicion;
+  animation-iteration-count: infinite; }
+
+.apariciones {
+  opacity: 0;
+  animation-duration: 300s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }
+
+.transformacion:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.footer__titulo:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.footer__texto:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.footer__boton:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoFace:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoGmail:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoWhatsapp:hover {
+  transform: scale(1.1);
+  transition: 1s; }
+
+.logoInstagram:hover {
+  transform: scale(1.1);
+  transition: 1s; }
 
 * {
   margin: 0px;
@@ -48,8 +243,8 @@ ul li a {
   height: 100px; }
 
 a img {
-  width: 5vw;
-  height: 4vh;
+  width: 40px;
+  height: 40px;
   margin-top: 6px; }
 
 .margenesLogo {
@@ -60,61 +255,53 @@ body {
   background-image: url(../images/footerDePan2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-}
+  background-position-y: top; }
 
 .fondoGradiente {
   background-image: linear-gradient(#FFF1E6, #fff1e67c);
-  height: auto;
-  box-sizing: inherit;
-}
-
+  height: max-content; }
 
 /*estructura de la página utilizando grids*/
 main {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
+  color: red;
+  height: 90vh;
+  animation-duration: 300s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite; }
 
 /*elementos*/
 h1 {
-  grid-area: h1;
   font-family: sans-serif;
   font-size: 65px;
   color: #9fa385;
   margin-left: 5vw;
-  text-align: center;
-}
+  align-self: flex-end; }
 
 .main__imagen {
-  margin-top: 5vh;
-  height: auto;
+  width: 45%;
+  height: 50vh;
   align-self: flex-end;
-  padding: 1vh; 
-}
+  padding: 1vh;
+  margin: 4px; }
 
 p {
-  grid-area: p;
   justify-self: center;
   align-self: center;
-  width: 90%;
+  width: 45vw;
   font-size: 20px;
   font-family: 'Indie Flower', cursive;
-  color: black; 
-  text-align: center;
-}
+  color: black; }
+
+.row > * {
+  width: 45%; }
 
 .main__boton {
-  grid-area: button;
+  grid-area: main__boton;
   justify-self: center;
-  font-family: 'Indie Flower', cursive;
-}
-
-.main__boton a {
-  text-decoration: none;
   color: black;
-}
+  height: 3vh;
+  width: 8vw;
+  margin-left: 5px; }
 
 /*footer*/
 footer nav ul {

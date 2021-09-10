@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Hablemos" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Hablemos</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/hablemos.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
@@ -13,20 +19,22 @@
 </head>
 <body>
     <main class="fondoGradiente">
+
         <header>
-            <nav class="colorNavegador"> 
-                <ul>
-                    <li><a href="../index.html"><img src="../images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a></li>
-                    <li><a href="./Productos.html" class="posicionMenu">Productos</a></li>
-                    <li><a href="./talleres-y-asesorias.html" class="posicionMenu">Talleres y Asesorías</a></li>
-                    <li><a href="./sobre-mi.html" class="posicionMenu">Sobre Mí</a></li>
-                    <li><a href="./hablemos.html" class="posicionMenu">Hablemos</a></li>
-                </ul>    
-            </nav>
+            <li class="nav-item dropdown colorNavegador">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="../images/logoalternativo.png" class="margenesLogo" alt="logoMenu"></a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../index.html">Home</a>
+                    <a class="dropdown-item" href="./Productos.html">Productos</a>
+                    <a class="dropdown-item" href="./talleres-y-asesorias.html">Talleres y Asesorías</a>
+                    <a class="dropdown-item" href="./sobre-mi.html">Sobre Mi</a>
+                    <a class="dropdown-item" href="./hablemos.html">Hablemos</a>
+                  </div>
+              </li>
         </header>
         <section class="apariciones">
-            <h1 class="transformacion">Hablemos</h1>
-            <form class="transformacion">
+            <h1>Hablemos</h1>
+            <form>
                 <label for="Nombre y Apellido">Nombre y Apellido</label>
                 <br>
                 <input type="text" name="Nombre y Apellido">
@@ -48,7 +56,7 @@
                 <input type="reset" value="Limpiar Formulario">
                 <input type="submit" value="Enviar">
             </form>
-            <nav class="mapa transformacion">
+            <nav class="mapa">
                 <a href="https://www.google.com/maps/place/e3202,+Calle+Antonio+de+Luque+293,+E3202+Concordia,+Entre+R%C3%ADos/@-31.3775776,-58.0086124,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x95ade81ff6fef2d7:0x1353a4f32eac0040!2se3202,+Calle+Antonio+de+Luque+293,+E3202+Concordia,+Entre+R%C3%ADos!3b1!8m2!3d-31.3775776!4d-58.0080652!3m4!1s0x95ade81ff6fef2d7:0x1353a4f32eac0040!8m2!3d-31.3775776!4d-58.0080652">
                 <img class="mapa__imagen" src="file:///Users/mac152011/Desktop/Panes%20y%20Canciones-Juan%20Manuel%20Borrego/images/donde-nace-todo.png" width="300" height="300" alt="Donde nace todo">
                 </a>
