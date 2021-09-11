@@ -90,8 +90,8 @@ body {
  .botonPan1 {
     grid-area: botonPan1;
     color: black;
-    height: auto;
-    width: 30%;
+    height: 30px;
+    width: 80px;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -104,8 +104,8 @@ body {
  .botonPan2 {
     grid-area: botonPan2;
     color: black;
-    height: auto;
-    width: 30%;
+    height: 30px;
+    width: 80px;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -118,8 +118,8 @@ body {
  .botonPan3 {
     grid-area: botonPan3;
     color: black;
-    height: auto;
-    width: 30%;
+    height: 30px;
+    width: 80px;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -131,8 +131,8 @@ body {
 
  .botonPan4 {
     grid-area: botonPan4;
-    height: auto;
-    width: 30%;
+    height: 30px;
+    width: 80px;
     margin-left: 20vw;
     font-family: 'Indie Flower', cursive;
  }
@@ -147,7 +147,7 @@ body {
 h1 {
     grid-area: h1;
     font-family: sans-serif;
-    font-size: 65px;
+    font-size: 50px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     text-align: center;

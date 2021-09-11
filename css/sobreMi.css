@@ -243,8 +243,8 @@ ul li a {
   height: 100px; }
 
 a img {
-  width: 5vw;
-  height: 4vh;
+  width: 40px;
+  height: 40px;
   margin-top: 6px; }
 
 .margenesLogo {
@@ -261,10 +261,11 @@ body {
   background-image: linear-gradient(#FFF1E6, #fff1e67c);
   height: max-content; }
 
-/*estructura de la página utilizando grids*/
+/*estructura de la página utilizando flexbox*/
 main {
-  color: red;
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   animation-duration: 300s;
   animation-name: aparecer;
   animation-iteration-count: infinite; }
@@ -272,14 +273,14 @@ main {
 /*elementos*/
 h1 {
   font-family: sans-serif;
-  font-size: 65px;
+  font-size: 50px;
   color: #9fa385;
   margin-left: 5vw;
-  align-self: flex-end; }
+  text-align: center; }
 
 .main__imagen {
   width: 45%;
-  height: 50vh;
+  height: auto;
   align-self: flex-end;
   padding: 1vh;
   margin: 4px; }
@@ -287,20 +288,18 @@ h1 {
 p {
   justify-self: center;
   align-self: center;
-  width: 45vw;
+  width: 100%;
   font-size: 20px;
   font-family: 'Indie Flower', cursive;
   color: black; }
 
-.row > * {
-  width: 45%; }
 
 .main__boton {
   grid-area: main__boton;
   justify-self: center;
   color: black;
-  height: 3vh;
-  width: 8vw;
+  height: 75px;
+  width: 70px;
   margin-left: 5px; }
 
 /*footer*/

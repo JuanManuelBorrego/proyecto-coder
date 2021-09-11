@@ -129,7 +129,7 @@ header {
       grid-template-columns: auto 60vw auto; }
       header div nav h1 {
         grid-area: h1;
-        font-size: 45px;
+        font-size: 50px;
         font-family: sans-serif;
         color: #a2a39b; }
       header div nav p {
@@ -264,9 +264,9 @@ header {
         width: 30%;
         font-family: 'Indie Flower', cursive;
       }
-        .section2 article .section2__titulo #boton a {
-          color: black;
-          text-decoration: none; }
+    .section2 article .section2__titulo #boton a {
+      color: black;
+      text-decoration: none; }
   .section2 .section2__foto1 {
     grid-area: section2__foto1;
     align-self: center;
@@ -337,11 +337,12 @@ header {
     font-style: none;
     margin-left: 45vw;
     height: auto;
-    width: 30%;
+    width: 15%;
     font-family: 'Indie Flower', cursive; }
     .section3 .section3__botonTabla a {
       color: black;
-      text-decoration: none; }
+      text-decoration: none; 
+    }
   .section3 table {
     background-image: url(../images/panConHumo.jpeg);
     background-size: cover;
@@ -392,7 +393,7 @@ footer {
         font-style: none;
         margin-left: 65vw;
         height: auto;
-        width: 30%;
+        width: 15%;
         font-family: 'Indie Flower', cursive; }
     footer .footer__boton a {
       color: black;

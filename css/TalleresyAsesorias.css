@@ -111,7 +111,7 @@ main {
 
 h1 {
     grid-area: h1;
-    font-size: 65px;
+    font-size: 50px;
     font-family: sans-serif;
     color: rgb(206, 159, 57);
     text-align: center;
@@ -121,7 +121,7 @@ h1 {
 .subtitulo1 {
     grid-area: subtitulo1;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     text-align: center;
@@ -130,7 +130,7 @@ h1 {
 .subtitulo2 {
     grid-area: subtitulo2;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     margin-right: 5vw;
@@ -140,7 +140,7 @@ h1 {
 .subtitulo3 {
     grid-area: subtitulo3;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(159, 163, 133);
     margin-left: 5vw;
     text-align: center;
