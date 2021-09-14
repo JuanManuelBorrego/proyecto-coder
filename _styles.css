@@ -1,0 +1,197 @@
+@keyframes primeraAparicion {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes segundaAparicion {
+    1% {opacity: 0;}
+    2% {opacity: 0;}
+    2% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes terceraAparicion {
+    0% {opacity: 0;}
+    3% {opacity: 0;}
+    4% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes cuartaAparicion {
+    0% {opacity: 0;}
+    4% {opacity: 0;}
+    5% {opacity: 1;}
+    100% {opacity: 1;}
+}
+/*PROBANDO EL INDEX2*/
+
+ #fondoDePan {
+     background-image: url(../images/panEnHd.jpeg);
+     background-size: cover;
+    background-attachment: fixed;
+    }
+
+#degradeInicio {
+    background-image: linear-gradient(#fff1e67c,#FFF1E6);
+
+}
+
+ #prueba {
+    margin-top: 10%;
+ }
+
+ .fondoCrema {
+     background-color: #FFF1E6;
+ }
+ 
+ .row {
+     margin-top: 10vh;
+ }
+
+ .ultimoTramo {
+    background-image: url(../images/footerDePan2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+ }
+
+ .degradeUltimoTramo {
+     background-image: linear-gradient(#FFF1E6,#fff1e67c);
+ }
+ footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     }
+    footer .footer__color {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+     }
+    footer .footer__titulo {
+      color: #9fa385;
+      font-family: sans-serif;
+      font-size: 40px;
+      text-align: center; }
+    footer .footer__texto {
+      color: black;
+      width: 80vw;
+      font-size: 20px;
+      font-family: 'Indie Flower', cursive;
+      margin-left: 10vw;
+      text-align: center; }
+    footer .footer__boton {
+      font-size: 16px;
+          font-style: none;
+          margin-left: 65vw;
+          height: auto;
+          width: 30%;
+          font-family: 'Indie Flower', cursive; }
+      footer .footer__boton a {
+        color: black;
+        text-decoration: none; }
+    footer nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      height: 15vh;
+      top: 100vh;
+      padding: 2px, 1px, 2px, 1px;
+      padding: 2px,1px,2px,1px; }
+      footer nav ul a img {
+        width: 30px;
+        height: 30px; }
+
+/*PROBANDO EL INDEX2*/
+
+
+.section1:hover .primeraAparicion{
+    animation-duration: 150s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
+}
+
+.section2:hover .primeraAparicion{
+    animation-duration: 150s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
+}
+
+.section3:hover .primeraAparicion{
+    animation-duration: 150s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
+}
+
+
+.section1:hover .segundaAparicion {
+    animation-duration: 150s;
+    animation-name: segundaAparicion;
+    animation-iteration-count: infinite;
+}
+
+.section2:hover .segundaAparicion {
+    animation-duration: 200s;
+    animation-name: segundaAparicion;
+    animation-iteration-count: infinite; 
+}
+
+.section2:hover .terceraAparicion {
+    animation-duration: 200s;
+    animation-name: terceraAparicion;
+    animation-iteration-count: infinite;
+}
+
+
+.section2:hover .cuartaAparicion {
+    animation-duration: 200s;
+    animation-name: cuartaAparicion;
+    animation-iteration-count: infinite;
+}
+
+.apariciones {
+    opacity: 0;
+    animation-duration: 300s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
+}
+
+.transformacion:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+
+
+
+
+.footer__boton:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logoFace:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logoGmail:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logoWhatsapp:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.logoInstagram:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+ 
+
