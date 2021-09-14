@@ -82,13 +82,7 @@
   transform: scale(1.1);
   transition: 1s; }
 
-.footer__titulo:hover {
-  transform: scale(1.1);
-  transition: 1s; }
 
-.footer__texto:hover {
-  transform: scale(1.1);
-  transition: 1s; }
 
 .footer__boton:hover {
   transform: scale(1.1);

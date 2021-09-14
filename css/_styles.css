@@ -32,8 +32,7 @@
     background-attachment: fixed;
     }
 
- .container {
-    background-image: linear-gradient(#fff1e67c, #FFF1E6); }
+ 
 
  #prueba {
     margin-top: 10%;
@@ -160,15 +159,10 @@
     transition: 1s;
 }
 
-.footer__titulo:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
 
-.footer__texto:hover {
-    transform: scale(1.1);
-    transition: 1s;
-}
+
+
+
 
 .footer__boton:hover {
     transform: scale(1.1);
