@@ -32,7 +32,10 @@
     background-attachment: fixed;
     }
 
- 
+#degradeInicio {
+    background-image: linear-gradient(#fff1e67c,#FFF1E6);
+
+}
 
  #prueba {
     margin-top: 10%;
