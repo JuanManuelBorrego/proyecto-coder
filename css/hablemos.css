@@ -12,6 +12,7 @@
   .navbar {
     background-color:rgb(255, 255, 255);
     width: 100%;
+    border: solid 1px rgb(246, 142, 29);
   }
   
   .portada {
