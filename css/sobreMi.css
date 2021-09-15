@@ -1,316 +1,129 @@
-@charset "UTF-8";
-@keyframes primeraAparicion {
-  0% {
-    opacity: 0; }
-  1% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes segundaAparicion {
-  1% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  2% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes terceraAparicion {
-  0% {
-    opacity: 0; }
-  3% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes cuartaAparicion {
-  0% {
-    opacity: 0; }
-  4% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-.section1:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section3:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section1:hover .segundaAparicion {
-  animation-duration: 150s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .segundaAparicion {
-  animation-duration: 200s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .terceraAparicion {
-  animation-duration: 200s;
-  animation-name: terceraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .cuartaAparicion {
-  animation-duration: 200s;
-  animation-name: cuartaAparicion;
-  animation-iteration-count: infinite; }
-
-.apariciones {
-  opacity: 0;
-  animation-duration: 300s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.transformacion:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__titulo:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__texto:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__boton:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoFace:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoGmail:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoWhatsapp:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoInstagram:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-@keyframes primeraAparicion {
-  0% {
-    opacity: 0; }
-  1% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes segundaAparicion {
-  1% {
-    opacity: 0; }
-  2% {
-    opacity: 0; }
-  2% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes terceraAparicion {
-  0% {
-    opacity: 0; }
-  3% {
-    opacity: 0; }
-  4% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-@keyframes cuartaAparicion {
-  0% {
-    opacity: 0; }
-  4% {
-    opacity: 0; }
-  5% {
-    opacity: 1; }
-  100% {
-    opacity: 1; } }
-
-.section1:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section3:hover .primeraAparicion {
-  animation-duration: 150s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.section1:hover .segundaAparicion {
-  animation-duration: 150s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .segundaAparicion {
-  animation-duration: 200s;
-  animation-name: segundaAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .terceraAparicion {
-  animation-duration: 200s;
-  animation-name: terceraAparicion;
-  animation-iteration-count: infinite; }
-
-.section2:hover .cuartaAparicion {
-  animation-duration: 200s;
-  animation-name: cuartaAparicion;
-  animation-iteration-count: infinite; }
-
-.apariciones {
-  opacity: 0;
-  animation-duration: 300s;
-  animation-name: primeraAparicion;
-  animation-iteration-count: infinite; }
-
-.transformacion:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__titulo:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__texto:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.footer__boton:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoFace:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoGmail:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoWhatsapp:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
-.logoInstagram:hover {
-  transform: scale(1.1);
-  transition: 1s; }
-
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none; }
 
-ul li a {
-  text-decoration: none; }
-
-.posicionMenu {
-  color: black; }
-
-.colorNavegador {
-  background-image: linear-gradient(#f8d1b3, #FFF1E6);
-  height: 100px; }
-
-a img {
-  width: 40px;
-  height: 40px;
-  margin-top: 6px; }
-
-.margenesLogo {
-  top: 1vh;
-  left: 2vw; }
-
-body {
-  background-image: url(../images/footerDePan2.jpeg);
+#fondoDePan {
+  background-image: url(../images/felicidad.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: top; }
+ background-attachment: fixed;
+ background-position-x: center;
+ background-position-y: center;
+ }
+ * {
+  margin: 0px;
+  padding: 0px;
+}
+​
+​
+#prueba {
+ margin-top: 10%;
+}
 
-.fondoGradiente {
-  background-image: linear-gradient(#FFF1E6, #fff1e67c);
-  height: max-content; }
+.navbar {
+  background-color:rgb(255, 255, 255);
+  width: 100%;
+}
 
-/*estructura de la página utilizando flexbox*/
-main {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  animation-duration: 300s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite; }
+.portada {
+  height: 200vh;
+}
 
-/*elementos*/
+section {
+  background-color: rgba(128, 128, 128, 0.521);
+}
+
+.container {
+  border-top: 1px rgb(246, 142, 29) solid;
+}
+
 h1 {
-  font-family: sans-serif;
-  font-size: 50px;
-  color: #9fa385;
-  margin-left: 5vw;
-  text-align: center; }
+text-align: center;
+font-size: 50px;
+color: rgb(246, 142, 29);
+font-family: 'Indie Flower', cursive;
+margin-top: 10%;
+}
 
-.main__imagen {
-  width: 45%;
-  height: auto;
-  align-self: flex-end;
-  padding: 1vh;
-  margin: 4px; }
+h2 {
+  text-align: center;
+  margin-top: 2%;
+  font-size: 50px;
+  color: rgb(246, 142, 29);
+  font-family: 'Indie Flower', cursive;
+}
+
+.textoPortada {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  margin-top: 10%;
+}
 
 p {
-  justify-self: center;
-  align-self: center;
-  width: 100%;
   font-size: 20px;
+  text-align: center;
   font-family: 'Indie Flower', cursive;
-  color: black; }
+}
 
-
-.main__boton {
-  grid-area: main__boton;
-  justify-self: center;
-  color: black;
-  height: 75px;
-  width: 70px;
-  margin-left: 5px; }
-
-/*footer*/
-footer nav ul {
+footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  height: 15vh;
-  top: 100vh;
-  padding: 2px, 1px, 2px, 1px;
-  padding: 2px,1px,2px,1px; }
-  footer nav ul img {
-    height: 30px;
-    width: 30px; }
+   }
+  footer .footer__color {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+  footer .footer__titulo {
+    color: rgb(246, 142, 29);
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive; }
+  footer .footer__texto {
+    color: black;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center; }
+  footer .footer__boton {
+    font-size: 16px;
+        font-style: none;
+        margin-left: 65vw;
+        height: auto;
+        width: 30%;
+        font-family: 'Indie Flower', cursive; }
+    footer .footer__boton a {
+      color: black;
+      text-decoration: none; }
+  footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15vh;
+    top: 100vh;
+    padding: 2px, 1px, 2px, 1px;
+    padding: 2px,1px,2px,1px; }
+    footer nav ul a img {
+      width: 30px;
+      height: 30px;
+      margin: 10px;}
+      .derechos {
+          text-align: center;
+          font-size: 12px;
+      }
+
+      @keyframes primeraAparicion {
+        0% {opacity: 0;}
+        1% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    
+    .apariciones {
+        opacity: 0;
+        animation-duration: 300s;
+        animation-name: primeraAparicion;
+        animation-iteration-count: infinite;
+    }
