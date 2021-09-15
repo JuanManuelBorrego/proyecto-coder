@@ -13,7 +13,7 @@
 }
 
 .navbar {
-    background-color:#f3b484;
+    background-color:blanchedalmond;
     width: 100%;
 }
 
@@ -23,16 +23,30 @@
 
 
 #titulo {
-  text-justify: auto;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 50px;
+  color: rgb(246, 142, 29);
+}
+
+.textoPortada {
+    font-size: 25px;
+    text-align: center;
+    color: black;
 }
 
 #textoSecundario {
     font-size: 25px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(246, 142, 29);
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 ​
-.fondoProductos {
-    background-color: #f0c5a3;
-}
+
 ​
 .ultimoTramo {
    background-image: url(../images/footerDePan2.jpeg);
@@ -97,3 +111,30 @@ footer {
     1% {opacity: 1;}
     100% {opacity: 1;}
     }
+
+body {
+    background-color: blanchedalmond;
+}
+
+.ultimoTramo {
+    background-image: url(../images/footerDePan2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 100%;
+    background-attachment: fixed;
+ }
+
+ .degradeUltimoTramo {
+    background-image: linear-gradient(#fff1e68e,rgba(223, 169, 122, 0.658));
+    height: 100%;
+ }
+
+table {
+    margin-bottom: 10%;
+}
+
+table tr td {
+    border: rgb(199, 181, 121) dotted 1px;
+}
+
