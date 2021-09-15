@@ -1,16 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 #fondoDePan {
     background-image: url(../images/panEnHd.jpeg);
     background-size: cover;
    background-attachment: fixed;
    }
 ​
-#degradeInicio {
-   background-image: linear-gradient(#FFF1E6,rgb(223, 169, 122));
-}
-​
 #prueba {
-   margin-top: 10%;
-}
+    margin-top: 10%;
+ }
 
 .navbar {
     background-color:rgb(255, 255, 255);
@@ -73,7 +74,7 @@ footer {
     }
    footer .footer__titulo {
      color: rgb(246, 142, 29);
-     font-family: sans-serif;
+     font-family: 'Indie Flower', cursive;   
      font-size: 40px;
      text-align: center; }
    footer .footer__texto {

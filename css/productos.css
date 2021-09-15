@@ -3,13 +3,108 @@
     padding: 0px;
 }
 
+
 #fondoDePan {
     background-image: url(../images/aplausoDeHarina.jpeg);
+    background-size: cover;
+   background-attachment: fixed;
+   background-position-x: center;
+   }
+   * {
+    margin: 0px;
+    padding: 0px;
+}
+​
+​
+#prueba {
+   margin-top: 10%;
 }
 
-#degradeInicio {
-    background-image: linear-gradient(#fff1e67c,#FFF1E6);
+.navbar {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
 }
- 
 
+.portada {
+    height: 100vh;
+}
 
+.container {
+    border-top: 1px rgb(246, 142, 29) solid;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 50px;
+  color: rgb(246, 142, 29);
+  font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 50px;
+    color: rgb(246, 142, 29);
+    font-family: 'Indie Flower', cursive;
+}
+
+.textoPortada {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+     }
+    footer .footer__color {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+     }
+    footer .footer__titulo {
+      color: rgb(246, 142, 29);
+      font-family: sans-serif;
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Indie Flower', cursive; }
+    footer .footer__texto {
+      color: black;
+      font-size: 20px;
+      font-family: 'Indie Flower', cursive;
+      text-align: center; }
+    footer .footer__boton {
+      font-size: 16px;
+          font-style: none;
+          margin-left: 65vw;
+          height: auto;
+          width: 30%;
+          font-family: 'Indie Flower', cursive; }
+      footer .footer__boton a {
+        color: black;
+        text-decoration: none; }
+    footer nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 15vh;
+      top: 100vh;
+      padding: 2px, 1px, 2px, 1px;
+      padding: 2px,1px,2px,1px; }
+      footer nav ul a img {
+        width: 30px;
+        height: 30px;
+        margin: 10px;}
+        .derechos {
+            text-align: center;
+            font-size: 12px;
+        }
