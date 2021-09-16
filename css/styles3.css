@@ -1,167 +1,180 @@
+@charset "UTF-8";
+.subtitulo-1 {
+  color: #f68e1d; }
+
+.subtitulo-2 {
+  color: #f68e1d; }
+
+.subtitulo-3 {
+  color: #f68e1d; }
+
+.subtitulo-4 {
+  color: #f68e1d; }
+
 * {
-    margin: 0px;
-    padding: 0px;
-}
+  margin: 0px;
+  padding: 0px; }
 
 #fondoDePan {
-    background-image: url(../images/panEnHd.jpeg);
-    background-size: cover;
-   background-attachment: fixed;
-   }
+  background-image: url(../images/panEnHd.jpeg);
+  background-size: cover;
+  background-attachment: fixed; }
+
 ​
 #prueba {
-    margin-top: 10%;
- }
+  margin-top: 10%; }
 
 .navbar {
-    background-color:rgb(255, 255, 255);
-    width: 100%;
-    border: solid 1px rgb(246, 142, 29);
-}
+  background-color: white;
+  width: 100%;
+  border: solid 1px #f68e1d; }
 
 .portada {
-    height: 100vh;
-}
+  height: 100vh; }
 
 .logo {
-    margin-top: 15px;
-  }
+  margin-top: 15px;
+  text-align: center;
+  color: #f68e1d; }
 
 .container {
-    border-top: 1px rgb(246, 142, 29) solid;
-}
+  border-top: 1px #f68e1d solid; }
 
 #titulo {
   text-align: center;
   margin-top: 20%;
   font-size: 50px;
-  color: rgb(246, 142, 29);
-  font-family: 'Indie Flower', cursive;
-}
+  color: #f68e1d;
+  font-family: 'Indie Flower', cursive; }
 
 .textoPortada {
-    font-size: 25px;
-    text-align: center;
-    color: black;
-}
+  font-size: 25px;
+  text-align: center;
+  color: black; }
 
 p {
-    font-size: 20px;
-    text-align: justify;
-    font-family: 'Indie Flower', cursive;
-}
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Indie Flower', cursive; }
 
 h2 {
-    color: rgb(246, 142, 29);
-    margin-top: 10%;
-    margin-bottom: 5%;
-    font-family: 'Indie Flower', cursive;
-}
+  color: #f68e1d;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-family: 'Indie Flower', cursive; }
+
+.bordeDerecho {
+  border-right: solid 1px #f68e1d; }
+
+.bordeIzquierdo {
+  border-left: solid 1px #f68e1d; }
+
 ​
 ​
 .ultimoTramo {
-   background-image: url(../images/footerDePan2.jpeg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position-y: top;
-}
-​
+  background-image: url(../images/footerDePan2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: top; }
 
+​
 footer {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-    }
-   footer .footer__color {
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-    }
-   footer .footer__titulo {
-     color: rgb(246, 142, 29);
-     font-family: 'Indie Flower', cursive;   
-     font-size: 40px;
-     text-align: center; }
-   footer .footer__texto {
-     color: black;
-     font-size: 20px;
-     font-family: 'Indie Flower', cursive;
-     text-align: center; }
-   footer .footer__boton {
-     font-size: 16px;
-         font-style: none;
-         margin-left: 65vw;
-         height: auto;
-         width: 30%;
-         font-family: 'Indie Flower', cursive; }
-     footer .footer__boton a {
-       color: black;
-       text-decoration: none; }
-   footer nav ul {
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     height: 15vh;
-     top: 100vh;
-     padding: 2px, 1px, 2px, 1px;
-     padding: 2px,1px,2px,1px; }
-     footer nav ul a img {
-       width: 30px;
-       height: 30px;
-       margin: 10px;}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+footer .footer__color {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+footer .footer__titulo {
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px;
+  text-align: center; }
+
+footer .footer__texto {
+  color: black;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center; }
+
+footer .footer__boton {
+  font-size: 16px;
+  font-style: none;
+  margin-left: 65vw;
+  height: auto;
+  width: 30%;
+  font-family: 'Indie Flower', cursive; }
+
+footer .footer__boton a {
+  color: black;
+  text-decoration: none; }
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 15vh;
+  top: 100vh;
+  padding: 2px, 1px, 2px, 1px;
+  padding: 2px,1px,2px,1px; }
+
+footer nav ul a img {
+  width: 30px;
+  height: 30px;
+  margin: 10px; }
+
 ​
 .apariciones {
-    opacity: 0;
-    animation-duration: 300s;
-    animation-name: "primeraAparicion";
-    animation-iteration-count: infinite;}
+  opacity: 0;
+  animation-duration: 300s;
+  animation-name: "primeraAparicion";
+  animation-iteration-count: infinite; }
 
 @keyframes primeraAparicion {
-    0% {opacity: 0;}
-    1% {opacity: 1;}
-    100% {opacity: 1;}
-    }
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 body {
-    background-color: rgb(255, 255, 255) ;
-}
+  background-color: white; }
 
 .ultimoTramo {
-    background-image: url(../images/footerDePan2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: center;
-    height: 100%;
-    background-attachment: fixed;
- }
+  background-image: url(../images/footerDePan2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  height: 100%;
+  background-attachment: fixed; }
 
- .degradeUltimoTramo {
-    background-image: linear-gradient(#fff1e68e,rgba(223, 169, 122, 0.658));
-    height: 100%;
- }
+.degradeUltimoTramo {
+  background-image: linear-gradient(#fff1e68e, rgba(223, 169, 122, 0.658));
+  height: 100%; }
 
 table {
-    margin-bottom: 10%;
-}
+  margin-bottom: 10%; }
 
 table tr td {
-    border: rgb(199, 181, 121) dotted 1px;
-}
+  border: #f68e1d solid 1px; }
 
 .derechos {
-    text-align: center;
-    font-size: 12px;
-}
+  text-align: center;
+  font-size: 12px; }
 
 @keyframes primeraAparicion {
-    0% {opacity: 0;}
-    1% {opacity: 1;}
-    100% {opacity: 1;}
-}
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 
 .apariciones {
-    opacity: 0;
-    animation-duration: 300s;
-    animation-name: primeraAparicion;
-    animation-iteration-count: infinite;
-}
+  opacity: 0;
+  animation-duration: 300s;
+  animation-name: primeraAparicion;
+  animation-iteration-count: infinite; }

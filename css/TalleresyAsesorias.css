@@ -32,7 +32,9 @@
 
 .logo {
     margin-top: 15px;
-  }
+    text-align: center;
+    color: rgb(246, 142, 29);
+}
 
 .container {
     border-top: 1px rgb(246, 142, 29) solid;
@@ -45,6 +47,14 @@ h1 {
   color: rgb(246, 142, 29);
   font-family: 'Indie Flower', cursive;
 }
+
+.bordeDerecho {
+    border-right: solid 1px rgb(246, 142, 29);
+  }
+  
+.bordeIzquierdo {
+    border-left: solid 1px rgb(246, 142, 29);
+  }
 
 h2 {
     text-align: center;

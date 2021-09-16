@@ -33,6 +33,9 @@
 
 .logo {
   margin-top: 15px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  color: rgb(246, 142, 29);
 }
 
 .portada {

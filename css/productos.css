@@ -36,14 +36,17 @@
 
 .logo {
     margin-top: 15px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: rgb(246, 142, 29);
   }
 
 h1 {
   text-align: center;
   margin-top: 10%;
   font-size: 50px;
-  color: rgb(246, 142, 29);
   font-family: 'Indie Flower', cursive;
+  color: rgb(246, 142, 29);
 }
 
 h2 {
@@ -60,11 +63,14 @@ h2 {
     color: black;
 }
 
-p {
-    font-size: 20px;
-    text-align: justify;
-    font-family: 'Indie Flower', cursive;
+.bordeDerecho {
+  border-right: solid 1px rgb(246, 142, 29);
 }
+
+.bordeIzquierdo {
+  border-left: solid 1px rgb(246, 142, 29);
+}
+
 
 footer {
     display: flex;
@@ -126,3 +132,9 @@ footer {
           animation-name: primeraAparicion;
           animation-iteration-count: infinite;
       }
+    
+      p {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Indie Flower', cursive;
+    }

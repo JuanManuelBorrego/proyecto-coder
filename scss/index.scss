@@ -1,404 +1,182 @@
-$anchoImg: 30px;
-$altoImg: 30px;
-@import "styles.scss";
+@for $i from 1 through 4 {
+    .subtitulo-#{$i} {
+        color: rgb(246, 142, 29);
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-header{
+#fondoDePan {
     background-image: url(../images/panEnHd.jpeg);
-    background-position: center;
     background-size: cover;
-    height: auto;
-    div {
-        height: auto;
-        background-image: $gradiente-inverso;
-        nav{
-            display: grid;
-            grid-template-areas:
-            ". ul ."
-            ". . ."
-            ". h1 ."
-            ". p ."
-            ". img .";
-            grid-template-rows: auto 25vh auto auto;
-            grid-template-columns: auto 60vw auto;
-            h1 {
-                grid-area: h1;
-                font-size: 60px;
-                font-family: sans-serif;
-                color: rgb(162, 163, 155);
-            }
-            p{
-                grid-area: p;
-                font-size: $p-font-syze;
-                font-family: 'Indie Flower', cursive; 
-            }
-            
-            li{ 
-                a{ 
-                    text-decoration: none;
-                    color: black;
-                    text-transform: uppercase;
-                    .logoMenu {
-                        width: 40px;
-                        height: 40px;
-                        margin-left: 10px;
-                    }
-                }
-            }
-        }
-        img {
-            grid-area: img;
-            width: 50%;
-            height: auto;
-        }
-    }
+   background-attachment: fixed;
+   }
+​
+#prueba {
+    margin-top: 10%;
+ }
+
+.navbar {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    border: solid 1px rgb(246, 142, 29);
 }
 
-
-@media screen and (max-width: 600px) {
-    .colorNavegador {
-        display: flex;
-        flex-direction: column;
-        h1 {
-            font-size: 50px;
-            text-align: center;
-        }
-        img {
-            margin-left: 100px;
-        }
-    }
-}
-/*  seccion destinada a "Sobre Mi"  */
-
-.section1 {
-    background-image: url(../images/masa.png) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    article {
-        height: auto;
-        display: grid;
-        grid-template-areas:
-        ". ."
-        "section1__titulo ."
-        ". section1__foto1"
-        "section1__texto1 section1__foto1"
-        "section1__foto2 section1__texto2";
-        grid-template-columns: 45vw;
-        grid-template-rows: 10vh auto 10vh auto auto;
-        grid-column-gap: 20px;
-        grid-row-gap: 2px;;
-        background-color: #fff1e6c5;
-        justify-items: center;
-        align-items: flex-end;
-        .section1__titulo {
-            grid-area: section1__titulo;
-            font-family: sans-serif;
-            font-size: 50px;
-            color: rgb(162, 163, 155);
-            margin-left: 5vw;
-            align-self: flex-end;
-            #boton1 {
-                font-size: 1vw;
-                font-style: none;
-                margin-left: 30vw;
-                height: 3vh;
-                width: 8vw;
-                font-family: 'Indie Flower', cursive;
-                a{
-                    color: black;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
-@media screen and (max-width: 600px) {
-    .section1 {
-        display: flex;
-        flex-direction: column;
-        h2 {
-            text-align: center;
-        }
-    }
-}
-    .section1__foto1 {
-        grid-area: section1__foto1;
-        align-self: center;
-        width: 30%;
-        height: auto;
-        padding: 1vh;
-        margin-top: 20px;
-    }
-
-    .section1__foto2 {
-        grid-area: section1__foto2;
-        align-self: start;
-        width: 50%;
-        height: auto;
-        padding: 1vh;
-        margin: 4px;
-    }
-
-    .section1__texto1 {
-        grid-area: section1__texto1;
-        justify-self: end;
-        align-self: flex-start;
-        width: 50%;
-        font-size: larger;
-        font-family: 'Indie Flower', cursive; 
-        color: black;
-    }
-
-    .section1__texto2 {
-        grid-area: section1__texto2;
-        justify-self: start;
-        width: 50%;
-        font-size: larger;
-        font-family: 'Indie Flower', cursive; 
-        color: black;
-        margin-bottom: 40vh;
-    }
+.portada {
+    height: 100vh;
 }
 
-/* seccion destinada a productos*/
+.logo {
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(246, 142, 29);
+  }
 
-.section2 {
-    background-image: url(../images/panes.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: auto;
-    article {
-        height: auto;
-        display: grid;
-        align-items: baseline;
-        grid-template-areas:
-        "section2__titulo section2__titulo . section2__foto1 ."
-        "section2__titulo section2__titulo .  section2__foto1 ."
-        ". section2__foto2 section2__texto1 section2__foto1 ."
-        ". section2__foto2 section2__foto3 section2__foto1 ."
-        ". section2__foto4 section2__texto2 section2__texto2 ."
-        ". section2__foto4 section2__texto3 section2__foto5 ."
-        ".section2__foto4 section2__texto3 section2__foto5 ."
-        ". . . . .";
-        grid-template-columns: 10% 25% 25% 25% 10% ;
-        grid-template-rows: 200px 100px 15% 15% 15% auto 200px ;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-        background-color: #fff1e6c5;
-        .section2__titulo {
-            grid-area: section2__titulo;
-            width: 50vw;
-            font-family: sans-serif;
-            font-size: 50px;
-            color: rgb(162, 163, 155);
-            position: relative;
-            margin-top: 5vh;
-            margin-left: 5vw;
-            #boton {
-                font-size: 1vw;
-                font-style: none;
-                margin-left: 30vw;
-                height: 3vh;
-                width: 8vw;
-                font-family: 'Indie Flower', cursive;
-                a{
-                    color: black;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-
-    .section2__foto1 {
-        grid-area: section2__foto1;
-        align-self: center;
-        width: 60%;
-        height: auto;
-        padding: 1vh;
-        margin: 4px;
-    }
-
-    .section2__foto2 {
-        grid-area: section2__foto2;
-        width: 60%;
-        height: auto;
-        padding: 1vh;
-        margin: 4px;
-    }
-
-    .section2__foto3 {
-        grid-area: section2__foto3;
-        width: auto;
-        height: 150px;
-        padding: 1vh;
-        margin: 4px;
-    }
-
-    .section2__foto4 {
-        grid-area: section2__foto4;
-        width: 60%;
-        height: auto;
-        padding: 1vh;
-        margin: 4px;
-    }
-
-    .section2__foto5 {
-        grid-area: section2__foto5;
-        width: 40%;
-        height: auto;
-        padding: 1vh;
-        margin: 4px;
-    }
-
-    .section2__texto1 {
-        grid-area: section2__texto1;
-        text-align: center;
-        font-size: 20px;
-        font-family: 'Indie Flower', cursive; 
-        color: black; 
-    }
-
-    .section2__texto2 {
-        grid-area: section2__texto2;
-        text-align: center;
-        justify-content: center;
-        font-size: 20px;
-        font-family: 'Indie Flower', cursive; 
-        color: black; 
-    }
-
-    .section2__texto3 {
-        grid-area: section2__texto3;
-        text-align: center;
-        justify-self: center;
-        font-size: 20px;
-        font-family: 'Indie Flower', cursive; 
-        color: black; 
-    }
+.container {
+    border-top: 1px rgb(246, 142, 29) solid;
 }
 
-/* seccion 3 que referencia a "Talleres y Asesorías" */
-
-
-
-.section3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #fff1e6c5;
-    height: auto;
-    .section3__titulo {
-        width: 80%;
-        font-family: sans-serif;
-        font-size: 50px;
-        color: rgb(159, 163, 133);
-        margin-top: 100px;
-    }
-    .section3__botonTabla {
-            font-size: 1vw;
-            font-style: none;
-            margin-left: 45vw;
-            height: 3vh;
-            width: 8vw;
-            font-family: 'Indie Flower', cursive;
-            a{
-                color: black;
-                text-decoration: none;
-            }
-    }
-
-    table {
-        background-image: url(../images/panConHumo.jpeg);
-        background-size: cover;
-        background-position: center;
-        margin-top: 5vh;
-        margin-left: 5vw;
-        tr {
-            td{
-                border: solid 1vh black;
-                color: white;
-                height: 20vh;
-                width: 25vw;
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    li {
-                        color: white;
-                    }
-                }
-            }
-        }
-    }
+#titulo {
+  text-align: center;
+  margin-top: 20%;
+  font-size: 50px;
+  color: rgb(246, 142, 29);
+  font-family: 'Indie Flower', cursive;
 }
 
-/* footer que hace referencia a la sección "Hablemos"  */
+.textoPortada {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
 
+p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+    color: rgb(246, 142, 29);
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: 'Indie Flower', cursive;
+}
+
+.bordeDerecho {
+    border-right: solid 1px rgb(246, 142, 29);
+}
+
+.bordeIzquierdo {
+    border-left: solid 1px rgb(246, 142, 29);
+}
+​
+​
+.ultimoTramo {
+   background-image: url(../images/footerDePan2.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-y: top;
+}
+​
 
 footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+    }
+   footer .footer__color {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    }
+   footer .footer__titulo {
+     font-family: 'Indie Flower', cursive;   
+     font-size: 40px;
+     text-align: center; }
+   footer .footer__texto {
+     color: black;
+     font-size: 20px;
+     font-family: 'Indie Flower', cursive;
+     text-align: center; }
+   footer .footer__boton {
+     font-size: 16px;
+         font-style: none;
+         margin-left: 65vw;
+         height: auto;
+         width: 30%;
+         font-family: 'Indie Flower', cursive; }
+     footer .footer__boton a {
+       color: black;
+       text-decoration: none; }
+   footer nav ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     height: 15vh;
+     top: 100vh;
+     padding: 2px, 1px, 2px, 1px;
+     padding: 2px,1px,2px,1px; }
+     footer nav ul a img {
+       width: 30px;
+       height: 30px;
+       margin: 10px;}
+​
+.apariciones {
+    opacity: 0;
+    animation-duration: 300s;
+    animation-name: "primeraAparicion";
+    animation-iteration-count: infinite;}
+
+@keyframes primeraAparicion {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+    }
+
+body {
+    background-color: rgb(255, 255, 255) ;
+}
+
+.ultimoTramo {
     background-image: url(../images/footerDePan2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: top;
-    .footer__color {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-image: linear-gradient(#FFF1E6, #fff1e67c);
-        width: 100vw;
-        height: 100vh;
-    }
+    background-position-y: center;
+    height: 100%;
+    background-attachment: fixed;
+ }
 
-    .footer__titulo {
-        color: rgb(159, 163, 133);
-        font-family: sans-serif;
-        font-size: 50px;
-        text-align: center;
-    }
+ .degradeUltimoTramo {
+    background-image: linear-gradient(#fff1e68e,rgba(223, 169, 122, 0.658));
+    height: 100%;
+ }
 
-    .footer__texto {
-        color: black;
-        width: 80vw;
-        font-size: 20px;
-        font-family: 'Indie Flower', cursive;
-        margin-left: 10vw;
-        text-align: center;
-    }
-    
-    .footer__boton {
-        font-size: 1vw;
-        font-style: none;
-        margin-bottom: 10vh;
-        margin-left: 75vw;
-        height: 3vh;
-        width: 8vw;
-        font-family: 'Indie Flower', cursive;
-        a{
-            color: black;
-            text-decoration: none;
-        }
-    }
-    
-    nav {
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            height: 15vh;
-            top: 100vh;
-            padding: 2px, 1px, 2px, 1px;
-            padding: 2px,1px,2px,1px;
-            a {
-                img {
-                    width: $anchoImg;
-                    height: $altoImg;
-                }
-            }
-        }
-    }
+table {
+    margin-bottom: 10%;
+}
+
+table tr td {
+    border: rgb(246, 142, 29) solid 1px;
+}
+
+.derechos {
+    text-align: center;
+    font-size: 12px;
+}
+
+@keyframes primeraAparicion {
+    0% {opacity: 0;}
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+.apariciones {
+    opacity: 0;
+    animation-duration: 300s;
+    animation-name: primeraAparicion;
+    animation-iteration-count: infinite;
 }
