@@ -132,9 +132,23 @@ form {
     font-family: 'Indie Flower', cursive;
 }
 
+input {
+  border: rgb(246, 142, 29) solid 1px;
+  background-color: ghostwhite;
+}
+
+textarea {
+  border: rgb(246, 142, 29) solid 1px;
+  background-color: ghostwhite;
+}
+
+select {
+  border: rgb(246, 142, 29) solid 1px;
+  background-color: ghostwhite;
+}
 
 .mapa__imagen {
-    border: solid 2px black;
+    border: solid 1px rgb(246, 142, 29);
     padding: 1vh;
     margin: 4px;
     height: auto;

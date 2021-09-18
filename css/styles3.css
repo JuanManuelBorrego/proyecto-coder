@@ -15,12 +15,19 @@
   margin: 0px;
   padding: 0px; }
 
+.transparencia {
+  background-color: rgba(255, 235, 205, 0.452);
+}
+
 #fondoDePan {
   background-image: url(../images/panEnHd.jpeg);
   background-size: cover;
   background-attachment: fixed; }
 
-​
+.transparencia {
+  background-color: rgba(255, 235, 205, 0.452);
+}
+  ​
 #prueba {
   margin-top: 10%; }
 
@@ -30,7 +37,9 @@
   border: solid 1px #f68e1d; }
 
 .portada {
-  height: 100vh; }
+  height: 100vh;
+  background-color: #f8f9fa1f;
+}
 
 .logo {
   margin-top: 15px;

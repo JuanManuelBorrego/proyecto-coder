@@ -39,7 +39,8 @@
 }
 
 .portada {
-  height: 200vh;
+  height: auto;
+  background-color: #f8f9fa59;
 }
 
 section {
@@ -70,7 +71,7 @@ h2 {
   font-size: 25px;
   text-align: justify;
   color: black;
-  margin-top: 10%;
+  margin-bottom: 20%;
   font-family: 'Indie Flower', cursive;
 }
 
