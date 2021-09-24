@@ -136,3 +136,7 @@ footer {
             animation-name: primeraAparicion;
             animation-iteration-count: infinite;
         }
+      
+#ultimoPan {
+  margin-bottom: 5px;
+}

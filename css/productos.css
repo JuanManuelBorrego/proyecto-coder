@@ -138,4 +138,8 @@ footer {
         font-size: 20px;
         text-align: justify;
         font-family: 'Indie Flower', cursive;
-    }
+      }
+
+      #ultimoPan {
+        margin-bottom: 5px;
+      }

@@ -154,3 +154,7 @@ select {
     height: auto;
     width: 90%;
 }
+
+#separacionFinal {
+  margin-bottom: 5px;
+}

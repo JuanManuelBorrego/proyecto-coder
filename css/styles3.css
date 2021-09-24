@@ -187,3 +187,7 @@ table tr td {
   animation-duration: 300s;
   animation-name: primeraAparicion;
   animation-iteration-count: infinite; }
+
+#ultimoPan {
+  margin-bottom: 5px;
+}
